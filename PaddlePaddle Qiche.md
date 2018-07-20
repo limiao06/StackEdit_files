@@ -35,19 +35,38 @@ QA问题的一种解决办法是进行问题匹配， 面对一个问题q，从�
 
 ## 动手
 
-在明确思路后，就要开始动手了， 这个比赛要求必须使用百度的PaddlePaddle框架，而大家对于这个框架的熟悉程度显然不如tensorflow, pytorch， keras等（我想这可能是我侥幸夺冠的主要原因（囧））。
+在明确思路后，就要开始动手了， 这个比赛要求必须使用百度的PaddlePaddle框架，而大家对于这个框架的熟悉程度显然不如tensorflow, pytorch， keras等（我想这可能是我侥幸夺冠的主要原因（囧））。 由于我考虑seq2seq框架， 就以PaddlePaddle公开的[机器翻译](https://github.com/PaddlePaddle/book/tree/develop/08.machine_translation)代码作为基础，实现了自己的模型。 由于代码是运行在科赛的平台上，而且是以notebook的方式运行，所以我的代码并没有整理成为结构分明的代码库，而是一个庞大的notebook... 目前已经在科赛网上[开源](https://www.kesci.com/apps/home/competition/forum/5b4587e7a6e68e001068b577)了， 感兴趣的同学可以看一下，其中包含了从预处理到训练到测试的完整流程，所以有点长。。。
+
+值得提到的一些小的点是：
+1. 预训练词向量作为word embedding层的处置；
+2. Problem的encoder 和 Conversation 的encoder 共享了参数；
+3. 在attention decoder时， 引入了Problem 的 encoder结果计算attention score；
+4. Decoder softmax 层的参数矩阵和embedding层共享了参数， 这一点我感觉很重要。
 
 ## 结果
 
+这个比赛分为初赛和复赛两个阶段。
+### 初赛
+初赛阶段只能使用科赛提供的CPU环境，而且环境时间只有三个小时，三个小时后得手动“续命”，否则程序就自动断掉了； 三个小时对于使用CPU训练seq2seq网络简直太短了。。。为此我削减了模型复杂度， embedding size和 GRU的hidden size都设为100， 三个小时可以勉强训练1.5个epoch， 如果忘了“续命”，程序被杀掉后，就只能载入最新的checkpoint继续训练， 同时手动调节学习率。 最终成绩勉强超过 “暴力选择第一句” baseline， 进入了复赛。 真的很辛苦，当时看自己的排名感觉并没有什么戏，抱着随便搞搞的心态。
+
+### 复赛
+复赛阶段可以使用GPU环境， 环境时间变成了3天，真是鸟枪换炮，太爽了。
+
+
 ## 心得
+
+paddle心得
+pointer network, reinforcement learning
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IOWmguS9leeUqFBhZGRsZV
 BhZGRsZeWBmuaRmOimgVxuYXV0aG9yOiBNaWFvXG50YWdzOiAn
 RGVlcExlYXJuaW5nLFBhZGRsZVBhZGRsZSxTZXEyU2VxJ1xuY2
-F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOlstMTg2Mjg1Mjky
-MSwtOTE3OTU5MTExLC03NTQ0NjI5NjMsMjkwNDYzMjMsMTQ3Nj
+F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOlstMTY0NTE4Njc0
+NiwtOTE3OTU5MTExLC03NTQ0NjI5NjMsMjkwNDYzMjMsMTQ3Nj
 A4ODQ4OSw3MTkyNzgyOTEsLTIwMTMwMDkxMzMsLTIxNzA0NDEz
 MCwtNTg0NzE5MTIwLC0xMjQ0MjA3MDIxLDE2Njc4MDc1NiwtMj
 QzOTU0NTZdfQ==
