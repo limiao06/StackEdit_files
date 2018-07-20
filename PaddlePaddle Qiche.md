@@ -33,7 +33,9 @@ QA问题的一种解决办法是进行问题匹配， 面对一个问题q，从�
 ### 我的思路
 我更想把这个问题看成是摘要问题， Report是Conversation的摘要，但是是由Problem指导的摘要。 所以我觉得设计一个seq2seq的网络结构， 根据Problem和Conversation， 以生成式（而非抽取式）的方法，生成Report。 在算法上，我很大程度参考了[Teaching Machines to Read and Comprehend](https://arxiv.org/pdf/1506.03340.pdf) 这篇论文。
 
-## 动手 
+## 动手
+
+在明确思路后，就要k
 
 ## 结果
 
@@ -44,8 +46,9 @@ QA问题的一种解决办法是进行问题匹配， 面对一个问题q，从�
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IOWmguS9leeUqFBhZGRsZV
 BhZGRsZeWBmuaRmOimgVxuYXV0aG9yOiBNaWFvXG50YWdzOiAn
 RGVlcExlYXJuaW5nLFBhZGRsZVBhZGRsZSxTZXEyU2VxJ1xuY2
-F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOlsxMzAzODMwMDY1
-LC0xNTA1NDg5OTg3LDI5MDQ2MzIzLDE0NzYwODg0ODksNzE5Mj
-c4MjkxLC0yMDEzMDA5MTMzLC0yMTcwNDQxMzAsLTU4NDcxOTEy
-MCwtMTI0NDIwNzAyMSwxNjY3ODA3NTYsLTI0Mzk1NDU2XX0=
+F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOls1MjUyNjY3NDYs
+MTMwMzgzMDA2NSwtMTUwNTQ4OTk4NywyOTA0NjMyMywxNDc2MD
+g4NDg5LDcxOTI3ODI5MSwtMjAxMzAwOTEzMywtMjE3MDQ0MTMw
+LC01ODQ3MTkxMjAsLTEyNDQyMDcwMjEsMTY2NzgwNzU2LC0yND
+M5NTQ1Nl19
 -->
