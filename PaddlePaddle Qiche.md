@@ -31,7 +31,7 @@ QA问题的一种解决办法是进行问题匹配， 面对一个问题q，从�
 如果看成是阅读理解问题， 那么就是从Conversation中找出能回答Problem的答案， 由于目前的阅读理解数据集的答案长度通常比较短（一般是几个单词），所以state of the art的作法是根据Problem，从Context中选择一段作为答案，模型只要输出答案的开始和结束位置即可。 但是这个任务的report有点长，常常出现几十个甚至上百个词， 而且report中的词好像并不完全是来自于Conversation。 我写了个程序统计了一下， Report中67.7%的词来自于Conversation， 这个比例虽然不低，但是还是让我放弃了从Conversation中选择一段作为Report的方法。
 
 ### 我的思路
-我更想把这个问题看成是摘要问题， Report是Conversation的摘要，但是是由Problem指导的摘要。 所以我觉得设计一个seq2seq的网络结构， 根据Problem和Conversation， 以生成式（而非抽取式）的方法，生成Report。 在算法上，我很大程度参考了[Teaching Machines to Read and Comprehend](https://arxiv.org/pdf/1506.03340.pdf) 这篇论文
+我更想把这个问题看成是摘要问题， Report是Conversation的摘要，但是是由Problem指导的摘要。 所以我觉得设计一个seq2seq的网络结构， 根据Problem和Conversation， 以生成式（而非抽取式）的方法，生成Report。 在算法上，我很大程度参考了[Teaching Machines to Read and Comprehend](https://arxiv.org/pdf/1506.03340.pdf) 这篇论文。
 
 ## 动手 
 
@@ -44,8 +44,8 @@ QA问题的一种解决办法是进行问题匹配， 面对一个问题q，从�
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IOWmguS9leeUqFBhZGRsZV
 BhZGRsZeWBmuaRmOimgVxuYXV0aG9yOiBNaWFvXG50YWdzOiAn
 RGVlcExlYXJuaW5nLFBhZGRsZVBhZGRsZSxTZXEyU2VxJ1xuY2
-F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOlstMTUwNTQ4OTk4
-NywyOTA0NjMyMywxNDc2MDg4NDg5LDcxOTI3ODI5MSwtMjAxMz
-AwOTEzMywtMjE3MDQ0MTMwLC01ODQ3MTkxMjAsLTEyNDQyMDcw
-MjEsMTY2NzgwNzU2LC0yNDM5NTQ1Nl19
+F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOlsxMzAzODMwMDY1
+LC0xNTA1NDg5OTg3LDI5MDQ2MzIzLDE0NzYwODg0ODksNzE5Mj
+c4MjkxLC0yMDEzMDA5MTMzLC0yMTcwNDQxMzAsLTU4NDcxOTEy
+MCwtMTI0NDIwNzAyMSwxNjY3ODA3NTYsLTI0Mzk1NDU2XX0=
 -->
