@@ -27,7 +27,8 @@ QA问题的一种解决办法是进行问题匹配， 面对一个问题q，从�
 ### 角度2： 摘要问题
 摘要问题我之前没有实际做过啊，怎么快速明确这个思路好不好呢？ 这里感谢Markus同学分享的[开源项目](https://www.kesci.com/apps/home/project/5af51a65cb6ed25ca3279186)， 这里他尝试了一个比较粗暴的摘要方式，直接把Conversation中技师说的第一句话作为结果返回（在自动摘要问题中，段落的第一句话通常是比较重要的话）。这个简单粗暴的方法得分是多少？  32.3286分， 我的天！ 看来这个思路比QA要靠谱。
 
-### 角度3： 
+### 角度3： 阅读理解问题
+摘要时要考虑Conv
 
 ## 动手 
 
@@ -40,8 +41,8 @@ QA问题的一种解决办法是进行问题匹配， 面对一个问题q，从�
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IOWmguS9leeUqFBhZGRsZV
 BhZGRsZeWBmuaRmOimgVxuYXV0aG9yOiBNaWFvXG50YWdzOiAn
 RGVlcExlYXJuaW5nLFBhZGRsZVBhZGRsZSxTZXEyU2VxJ1xuY2
-F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOlstMTM0ODQyMDg0
-NSw4MjU4OTc1NjEsLTE0OTQ0NzgxODcsLTIxNzA0NDEzMCwtNT
+F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOlstMTA3ODE4ODY1
+OCwtMTM0ODQyMDg0NSw4MjU4OTc1NjEsLTIxNzA0NDEzMCwtNT
 g0NzE5MTIwLC0xMjQ0MjA3MDIxLDE2Njc4MDc1NiwtMjQzOTU0
 NTZdfQ==
 -->
