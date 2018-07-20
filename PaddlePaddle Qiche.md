@@ -35,7 +35,7 @@ QA问题的一种解决办法是进行问题匹配， 面对一个问题q，从�
 
 ## 动手
 
-在明确思路后，就要开始动手了， 这个比赛要求必须使用百度的PaddlePaddle框架，而大家对于这个框架的熟悉程度显然不如tensorflow, pytorch， keras等。
+在明确思路后，就要开始动手了， 这个比赛要求必须使用百度的PaddlePaddle框架，而大家对于这个框架的熟悉程度显然不如tensorflow, pytorch， keras等（我想这可能是我侥幸夺冠的主要原因（囧））。
 
 ## 结果
 
@@ -46,9 +46,9 @@ QA问题的一种解决办法是进行问题匹配， 面对一个问题q，从�
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IOWmguS9leeUqFBhZGRsZV
 BhZGRsZeWBmuaRmOimgVxuYXV0aG9yOiBNaWFvXG50YWdzOiAn
 RGVlcExlYXJuaW5nLFBhZGRsZVBhZGRsZSxTZXEyU2VxJ1xuY2
-F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOlstOTE3OTU5MTEx
-LC03NTQ0NjI5NjMsMTUyODc5OTQ2OCwyOTA0NjMyMywxNDc2MD
-g4NDg5LDcxOTI3ODI5MSwtMjAxMzAwOTEzMywtMjE3MDQ0MTMw
-LC01ODQ3MTkxMjAsLTEyNDQyMDcwMjEsMTY2NzgwNzU2LC0yND
-M5NTQ1Nl19
+F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOlstMTg2Mjg1Mjky
+MSwtOTE3OTU5MTExLC03NTQ0NjI5NjMsMjkwNDYzMjMsMTQ3Nj
+A4ODQ4OSw3MTkyNzgyOTEsLTIwMTMwMDkxMzMsLTIxNzA0NDEz
+MCwtNTg0NzE5MTIwLC0xMjQ0MjA3MDIxLDE2Njc4MDc1NiwtMj
+QzOTU0NTZdfQ==
 -->
