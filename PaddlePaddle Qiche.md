@@ -7,14 +7,25 @@
 
 看到这个比赛后，“多轮对话”数据第一时间吸引了我的注意，先申请参赛看看数据再说。 这个比赛基于[科赛](https://www.kesci.com/)平台，完成注册后，可以在科赛为你提供的云端虚拟机环境中看到数据，但是没有办法把数据下载到本地，( ⊙ o ⊙ )！ 这么狠，搞数据的想法破灭了，哭。 
 
-既然报名了，就尝试做一下吧，这毕竟是实际商业场景中产生的真实多轮对话数据。 数据产生的场景是这样的，一些车主在自己的爱车遇到问题后，在汽车大师App上发起提问，专业技师会根据问题（Problem）和用户进行一段对话（Conversation），从而帮住用户解决问题，然后需要根据问题和对话生成一个报告(Report)。 如下图所示。
-**需要图**
+既然报名了，就尝试做一下吧，这毕竟是实际商业场景中产生的真实多轮对话数据。 数据产生的场景是这样的，一些车主在自己的爱车遇到问题时，在汽车大师App上发起提问，专业技师会根据问题（Problem）和用户进行一段对话（Conversation），从而帮住用户解决问题，最后技师根据问题和对话生成一个报告(Report)。 如下图所示。
+**需要图， 从项目中截图**
 
-这个比赛的任务就是给定问题（Problem）和对话内容（Conversation），自动生成报告（Report）。
-
-
+这个比赛的任务就是给定问题（Problem）和对话内容（Conversation），自动生成报告（Report）， 通过计算算法生成的report和标准答案的ROUGE分数，评估算法的性能。 这个比赛的数据集由10万多条样本的训练集和各5000条样本的开发集和测试集组成。
 
 ## 思考
+
+如何解决这个问题呢？ 那么要把这个问题抽象一下， 有下面几个角度：
+1. 从Problem 和 Report的关系看， Report是要给出Problem的解答，所以这是个QA问题啊？
+2. 从Conversation 和 Report 的关系看， Report是对Conversation 内容的总结和提炼， 所以这是个文本摘要问题啊？
+3. 结合Problem， Conversation 和Report 一起看，好像是根据问题，从Conversation中提取答案的过程， 所以这是个阅读理解问题啊？
+
+到底哪一种理解方式好呢？ 我还真通过简单的验证方法进行了尝试：
+
+### 角度1：QA问题
+QA问题的一种解决办法是进行问题匹配， 面对一个问题q，从训练集中选择出最相似的问题q'， 然后把q'的答案a'作为答案返回。 为了简单验证一下， 我写了一个简单的baseline，基于tfidf 计算问题相似度，选择训练集中最相似问题的report作为答案返回。 提交！ 一看结果排行榜， 得分14.5，排名倒数第二位， 不要太惨。。。 仔细思考了一下， 可能存在这种情况：虽然提出的问题很像，但是实际情况各有不同，需要通过对话进一步找到真正的问题所在，对话中的重要信息一点都不用生成的report是好不到哪里去。
+
+### 角度2： 摘要问题
+摘要问题我之前没有实际做过啊，怎么快速明确这个思路好不好呢？ 这里感谢Markus同学分享的[开源项目](https://www.kesci.com/apps/home/project/5af51a65cb6ed25ca3279186)， 这里他尝试了一个比较粗暴的摘要方式，直接把Conversation中技师说的第一句话zuowe
 
 ## 动手 
 
@@ -27,6 +38,6 @@
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IOWmguS9leeUqFBhZGRsZV
 BhZGRsZeWBmuaRmOimgVxuYXV0aG9yOiBNaWFvXG50YWdzOiAn
 RGVlcExlYXJuaW5nLFBhZGRsZVBhZGRsZSxTZXEyU2VxJ1xuY2
-F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOlstMTI0NDIwNzAy
-MSwxNjY3ODA3NTYsLTI0Mzk1NDU2XX0=
+F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOlsxODc1ODgzNTAx
+LC0xMjQ0MjA3MDIxLDE2Njc4MDc1NiwtMjQzOTU0NTZdfQ==
 -->
