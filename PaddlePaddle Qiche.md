@@ -28,7 +28,7 @@ QA问题的一种解决办法是进行问题匹配， 面对一个问题q，从�
 摘要问题我之前没有实际做过啊，怎么快速明确这个思路好不好呢？ 这里感谢Markus同学分享的[开源项目](https://www.kesci.com/apps/home/project/5af51a65cb6ed25ca3279186)， 这里他尝试了一个比较粗暴的摘要方式，直接把Conversation中技师说的第一句话作为结果返回（在自动摘要问题中，段落的第一句话通常是比较重要的话）。这个简单粗暴的方法得分是多少？  32.3286分， 我的天！ 看来这个思路比QA要靠谱。
 
 ### 角度3： 阅读理解问题
-如果看成是阅读理解问题， 那么就是从Conversation中找出能回答Problem的答案， 由于目前的阅读理解数据集的答案长度通常比较短（一般是几个单词），所以state of the art的作法是根据Problem，从Context中选择一段作为答案，模型只要输出开始和结束的位置即可。 但是这个任务的report长度比较长， 
+如果看成是阅读理解问题， 那么就是从Conversation中找出能回答Problem的答案， 由于目前的阅读理解数据集的答案长度通常比较短（一般是几个单词），所以state of the art的作法是根据Problem，从Context中选择一段作为答案，模型只要输出答案的开始和结束位置即可。 但是这个任务的report有点长，常常出现几十个上百个词
 
 摘要时要考虑Conversation中哪些句子或者词是比较重要的， 对于这个任务来说，当然是能回答问题的句子或者词语比较重要了， 所以
 
@@ -43,7 +43,7 @@ QA问题的一种解决办法是进行问题匹配， 面对一个问题q，从�
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IOWmguS9leeUqFBhZGRsZV
 BhZGRsZeWBmuaRmOimgVxuYXV0aG9yOiBNaWFvXG50YWdzOiAn
 RGVlcExlYXJuaW5nLFBhZGRsZVBhZGRsZSxTZXEyU2VxJ1xuY2
-F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOlsxNDM2ODMzNDAz
+F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOlsxMDcyNjcyMzA1
 LDI5MDQ2MzIzLDE0NzYwODg0ODksNzE5Mjc4MjkxLC0yMDEzMD
 A5MTMzLC0yMTcwNDQxMzAsLTU4NDcxOTEyMCwtMTI0NDIwNzAy
 MSwxNjY3ODA3NTYsLTI0Mzk1NDU2XX0=
