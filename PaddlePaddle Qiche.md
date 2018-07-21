@@ -57,7 +57,7 @@ QA问题的一种解决办法是进行问题匹配， 面对一个问题q，从�
 ## 心得
 
 总结一下整个比赛过程，还是有一些想法的：
-1. 我认为绑定Decoder softmax 层的参数矩阵和embedding层的参数是有效果的，但是由于我代码写的有点问题，这个绑定限制了我的网络结构中embedding size和 GRU的 hidden size必须一致，导致我后面把hidden size增加到1024时，embedding size也必须到1024， 我感觉hidden size到1024还可以，甚至更大都行，但是embedding size到512就已经不小了
+1. 我认为绑定Decoder softmax 层的参数矩阵和embedding层的参数是有效果的，但是由于我代码写的有点问题，这个绑定限制了我的网络结构中embedding size和 GRU的 hidden size必须一致，导致我后面把hidden size增加到1024时，embedding size也必须到1024， 我感觉hidden size到1024还可以，甚至更大都行，但是embedding size到512就已经不小了， 实际可以在gru decode之后再加一层，从hidden size 降到ｅｍsize之后
 paddle心得
 pointer network, reinforcement learning
 
@@ -68,11 +68,11 @@ pointer network, reinforcement learning
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IOWmguS9leeUqFBhZGRsZV
 BhZGRsZeWBmuaRmOimgVxuYXV0aG9yOiBNaWFvXG50YWdzOiAn
 RGVlcExlYXJuaW5nLFBhZGRsZVBhZGRsZSxTZXEyU2VxJ1xuY2
-F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOls2MDI1MjkwMTMs
-MTEzMjU3OTIxNCwtMTYzOTYxMzEyNyw0OTcxNDg2MDgsNDM2MT
-A0MzgxLC0xODQ4MzY1NjcsNDQxMzk5OTU2LC0xNjQ1MTg2NzQ2
-LC05MTc5NTkxMTEsLTc1NDQ2Mjk2MywyOTA0NjMyMywxNDc2MD
-g4NDg5LDcxOTI3ODI5MSwtMjAxMzAwOTEzMywtMjE3MDQ0MTMw
-LC01ODQ3MTkxMjAsLTEyNDQyMDcwMjEsMTY2NzgwNzU2LC0yND
-M5NTQ1Nl19
+F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOls4MDc2NDg1MTYs
+NjAyNTI5MDEzLC0xNjM5NjEzMTI3LDQ5NzE0ODYwOCw0MzYxMD
+QzODEsLTE4NDgzNjU2Nyw0NDEzOTk5NTYsLTE2NDUxODY3NDYs
+LTkxNzk1OTExMSwtNzU0NDYyOTYzLDI5MDQ2MzIzLDE0NzYwOD
+g0ODksNzE5Mjc4MjkxLC0yMDEzMDA5MTMzLC0yMTcwNDQxMzAs
+LTU4NDcxOTEyMCwtMTI0NDIwNzAyMSwxNjY3ODA3NTYsLTI0Mz
+k1NDU2XX0=
 -->
