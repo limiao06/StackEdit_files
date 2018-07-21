@@ -56,6 +56,7 @@ QA问题的一种解决办法是进行问题匹配， 面对一个问题q，从�
 
 ## 心得
 
+总结一下zhengge
 paddle心得
 pointer network, reinforcement learning
 
@@ -66,9 +67,10 @@ pointer network, reinforcement learning
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IOWmguS9leeUqFBhZGRsZV
 BhZGRsZeWBmuaRmOimgVxuYXV0aG9yOiBNaWFvXG50YWdzOiAn
 RGVlcExlYXJuaW5nLFBhZGRsZVBhZGRsZSxTZXEyU2VxJ1xuY2
-F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOlstMTg0ODM2NTY3
-LDQ0MTM5OTk1NiwtMTY0NTE4Njc0NiwtOTE3OTU5MTExLC03NT
-Q0NjI5NjMsMjkwNDYzMjMsMTQ3NjA4ODQ4OSw3MTkyNzgyOTEs
-LTIwMTMwMDkxMzMsLTIxNzA0NDEzMCwtNTg0NzE5MTIwLC0xMj
-Q0MjA3MDIxLDE2Njc4MDc1NiwtMjQzOTU0NTZdfQ==
+F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOls0NzczNjY2MjAs
+LTE4NDgzNjU2Nyw0NDEzOTk5NTYsLTE2NDUxODY3NDYsLTkxNz
+k1OTExMSwtNzU0NDYyOTYzLDI5MDQ2MzIzLDE0NzYwODg0ODks
+NzE5Mjc4MjkxLC0yMDEzMDA5MTMzLC0yMTcwNDQxMzAsLTU4ND
+cxOTEyMCwtMTI0NDIwNzAyMSwxNjY3ODA3NTYsLTI0Mzk1NDU2
+XX0=
 -->
