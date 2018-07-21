@@ -1,6 +1,7 @@
 # 如何用PaddlePaddle做摘要
 
 
+
 本博客记录了如何使用百度PaddlePaddle框架实现了一个seq2seq模型，并侥幸获得“PaddlePaddle AI 产业应用赛——汽车大师问答摘要与推理”比赛[一等奖](https://www.kesci.com/apps/home/competition/5aec0eb10739c42faa203931/content/7)的过程。 
 
 ## 背景
@@ -8,7 +9,7 @@
 
 看到这个比赛后，“多轮对话”数据第一时间吸引了我的注意，先申请参赛看看数据再说。 这个比赛基于[科赛](https://www.kesci.com/)平台，完成注册后，可以在科赛为你提供的云端虚拟机环境中看到数据，但是没有办法把数据下载到本地，( ⊙ o ⊙ )！ 这么狠，搞数据的想法破灭了，哭。 
 
-既然报名了，就尝试做一下吧，这毕竟是实际商业场景中产生的真实多轮对话数据。 数据产生的场景是这样的，一些车主在自己的爱车遇到问题时，在汽车大师App上发起提问，专业技师会根据问题（Problem）和用户进行一段对话（Conversation），从而帮住用户解决问题，最后技师根据问题和对话生成一个报告(Report)。 如下图所示。
+既然报名了，就尝试做一下吧，这毕竟是实际商业场景中产生的真实多轮对话数据。 数据产生的场景是这样的，一些车主在自己的爱车遇到问题时，在汽车大师App上发起提问，专业技师会根据问题（Problem）和用户进行一段对话（Conversation），从而帮助用户解决问题，最后技师根据问题和对话生成一个报告(Report)。 如下图所示。
 
 ![](/images/paddle_qiche_trainset.png)
 
@@ -24,7 +25,7 @@
 到底哪一种理解方式好呢？ 我还真通过简单的验证方法进行了尝试：
 
 ### 角度1：QA问题
-QA问题的一种解决办法是进行问题匹配， 面对一个问题q，从训练集中选择出最相似的问题q'， 然后把q'的答案a'作为答案返回。 为了简单验证一下， 我写了一个简单的baseline，基于tfidf 计算问题相似度，选择训练集中最相似问题的report作为答案返回。 提交！ 一看结果排行榜， 得分14.5，排名倒数第二位， 不要太惨。。。 仔细思考了一下， 可能存在这种情况：虽然提出的问题很像，但是实际情况各有不同，需要通过对话进一步找到真正的问题所在，对话中的重要信息一点都不用生成的report是好不到哪里去。
+QA问题的一种解决办法是进行问题匹配， 面对一个问题q，从训练集中选择出最相似的问题q'， 然后把q'的答案a'作为答案返回。 为了简单验证一下， 我写了一个简单的baseline，基于tfidf 计算问题相似度，选择训练集中最相似问题的report作为答案返回。 提交！ 一看结果排行榜， 得分14.5，排名倒数第二位， 不要太惨。。。 仔细思考了一下， 可能存在这种情况：虽然提出的问题很像，但是实际情况各有不同，需要通过对话进一步找到真正的问题所在，因此一点都不使用对话信息生成的report是好不到哪里去。
 
 ### 角度2： 摘要问题
 摘要问题我之前没有实际做过啊，怎么快速明确这个思路好不好呢？ 这里感谢Markus同学分享的[开源项目](https://www.kesci.com/apps/home/project/5af51a65cb6ed25ca3279186)， 这里他尝试了一个比较粗暴的摘要方式，直接把Conversation中技师说的第一句话作为结果返回（在自动摘要问题中，段落的第一句话通常是比较重要的话）。这个简单粗暴的方法得分是多少？  32.3286分， 我的天！ 看来这个思路比QA要靠谱。
@@ -37,10 +38,10 @@ QA问题的一种解决办法是进行问题匹配， 面对一个问题q，从�
 
 ## 动手
 
-在明确思路后，就要开始动手了， 这个比赛要求必须使用百度的PaddlePaddle框架，而大家对于这个框架的熟悉程度显然不如tensorflow, pytorch， keras等（我想这可能是我侥幸夺冠的主要原因（囧））。 由于我考虑seq2seq框架， 就以PaddlePaddle公开的[机器翻译](https://github.com/PaddlePaddle/book/tree/develop/08.machine_translation)代码作为基础，实现了自己的模型。 由于代码是运行在科赛的平台上，而且是以notebook的方式运行，所以我的代码并没有整理成为结构分明的代码库，而是一个庞大的notebook... 目前已经在科赛网上[开源](https://www.kesci.com/apps/home/competition/forum/5b4587e7a6e68e001068b577)了， 感兴趣的同学可以看一下，其中包含了从预处理到训练到测试的完整流程，所以有点长。。。
+在明确思路后，就要开始动手了， 这个比赛要求必须使用百度的PaddlePaddle框架，而大家对于这个框架的熟悉程度显然不如tensorflow, pytorch， keras等（我想这可能是我侥幸夺冠的主要原因（囧））。 由于我考虑使用seq2seq结构， 就以PaddlePaddle公开的[机器翻译](https://github.com/PaddlePaddle/book/tree/develop/08.machine_translation)代码作为基础，实现了自己的模型。 由于代码是运行在科赛的平台上，而且是以notebook的方式运行，所以我的代码并没有整理成为结构分明的代码库，而是一个庞大的notebook。。。目前已经在科赛网上[开源](https://www.kesci.com/apps/home/competition/forum/5b4587e7a6e68e001068b577)了， 感兴趣的同学可以看一下，其中包含了从预处理到训练到测试的完整流程，所以有点长。。。
 
 值得提到的一些小的点是：
-1. 预训练词向量作为word embedding层的处置；
+1. 利用训练集、开发集和测试集中的文本预训练了词向量作为word embedding层的初值；
 2. Problem的encoder 和 Conversation 的encoder 共享了参数；
 3. 在attention decoder时， 引入了Problem 的 encoder结果计算attention score；
 4. Decoder softmax 层的参数矩阵和embedding层共享了参数， 这一点我感觉很重要。
@@ -49,7 +50,7 @@ QA问题的一种解决办法是进行问题匹配， 面对一个问题q，从�
 
 这个比赛分为初赛和复赛两个阶段。
 ### 初赛
-初赛阶段只能使用科赛提供的CPU环境，而且环境时间只有三个小时，三个小时后得手动“续命”，否则程序就自动断掉了； 三个小时对于使用CPU训练seq2seq网络简直太短了。。。为此我削减了模型复杂度， embedding size和 GRU的hidden size都设为100， 三个小时可以勉强训练1.5个epoch， 如果忘了“续命”，程序被杀掉后，就只能载入最新的checkpoint继续训练， 同时手动调节学习率。 最终成绩勉强超过 “暴力选择第一句” baseline， 进入了复赛。 真的很辛苦，当时看自己的[排名](https://www.kesci.com/apps/home/competition/5aec0eb10739c42faa203931/leaderboard/1)感觉并没有什么戏，抱着随便搞搞的心态。
+初赛阶段只能使用科赛提供的CPU环境，而且环境时间只有三个小时，三个小时后得手动“续命”，否则程序就自动断掉了； 三个小时对于使用CPU训练seq2seq网络简直太短了。。。为此我削减了模型复杂度， embedding size和 GRU的hidden size都设为100， 三个小时可以勉强训练1.5个epoch， 如果忘了“续命”，程序被杀掉后，就只能载入最新的checkpoint继续训练， 同时手动调节学习率。 最终[成绩](https://www.kesci.com/apps/home/competition/5aec0eb10739c42faa203931/leaderboard/1)勉强超过 “暴力选择第一句” baseline， 进入了复赛。当时看自己的排名感觉并没有什么戏，抱着随便搞搞的心态。
 
 
 
@@ -71,16 +72,16 @@ QA问题的一种解决办法是进行问题匹配， 面对一个问题q，从�
 ## PS:
 1. 虽然我的代码已经开源了，汽车大师的数据好像在科赛网上也能访问到，但是，按照科赛网提供的CPU环境+2小时限时，是没法正常完成训练的……
 2. 如果有想用PaddlePaddle做类似文本任务的同学，我在博客中介绍的零散思路和我的代码可能会有所帮助， 如果真能起到一点点的帮助作用，那么我写这期博客的目的就达到了90%。
-3. 毕竟还有10%的目的是想记录下自己第一个AI比赛冠军(*\^__^*) 。
+3. 毕竟还有10%的目的是想记录下自己第一个AI比赛冠军(\*^__^\*) 。
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IOWmguS9leeUqFBhZGRsZV
 BhZGRsZeWBmuaRmOimgVxuYXV0aG9yOiBNaWFvXG50YWdzOiAn
 RGVlcExlYXJuaW5nLFBhZGRsZVBhZGRsZSxTZXEyU2VxJ1xuY2
-F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOlsxMzQ2MTk2ODY2
-LDE1NTQwMzMyNTAsMTQ1ODAzMDM0MywtMzI1NDU4NTQ2LC0xMT
-k3ODk2NjI2LDIwODU3MTE1NzgsLTE2Mzk2MTMxMjcsNDk3MTQ4
-NjA4LDQzNjEwNDM4MSwtMTg0ODM2NTY3LDQ0MTM5OTk1NiwtMT
-Y0NTE4Njc0NiwtOTE3OTU5MTExLC03NTQ0NjI5NjMsMjkwNDYz
-MjMsMTQ3NjA4ODQ4OSw3MTkyNzgyOTEsLTIwMTMwMDkxMzMsLT
-IxNzA0NDEzMCwtNTg0NzE5MTIwXX0=
+F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOlstMjA5NDUyODE4
+MCwxMzQ2MTk2ODY2LDE1NTQwMzMyNTAsMTQ1ODAzMDM0MywtMz
+I1NDU4NTQ2LC0xMTk3ODk2NjI2LDIwODU3MTE1NzgsLTE2Mzk2
+MTMxMjcsNDk3MTQ4NjA4LDQzNjEwNDM4MSwtMTg0ODM2NTY3LD
+Q0MTM5OTk1NiwtMTY0NTE4Njc0NiwtOTE3OTU5MTExLC03NTQ0
+NjI5NjMsMjkwNDYzMjMsMTQ3NjA4ODQ4OSw3MTkyNzgyOTEsLT
+IwMTMwMDkxMzMsLTIxNzA0NDEzMF19
 -->
