@@ -59,24 +59,24 @@ QA问题的一种解决办法是进行问题匹配， 面对一个问题q，从�
 总结一下整个比赛过程，还是有一些想法的：
 1. 我认为绑定Decoder softmax 层的参数矩阵和embedding层的参数是有效果的，但是由于我代码写的有点问题，这个绑定限制了我的网络结构中embedding size和 GRU的 hidden size必须一致，导致我后面把hidden size增加到1024时，embedding size也必须到1024， 我感觉hidden size到1024还可以，甚至更大都行，但是embedding size到512就已经不小了， 实际可以在gru decode之后再加一层，从hidden size 降到embedding size之后， 再过绑定的softmax 就可以了， 当时没有做，可能有效果。
 2. 把GRU换成LSTM有可能还会好一点？
-3. 在摘要中使用CopyNet， Pointer network好像是比较有用的，特别在这个任务中， Report中有67+%的词是来自Conversation， 所以CopyNet， Pointer network应该会更好，但是由于对paddlepaddle不太熟悉，不会实现这样的网络。。。
-4. 在用seq2seq产生自然语言时， 引入reinforcement learning通常是非常有效的，可以解决训练和测试目标不匹配的问题（训练是看每个时刻的分类误差， 而测试时是用ROUGE， BLEU之类的整句的评估算法）， 但是同样没能实现。
-5. 这是我第一次使用paddlepaddle， 使用的版本好像是paddle
-paddle心得
-pointer network, reinforcement learning
+3. 在摘要中使用CopyNet， Pointer network好像是比较有用的，特别在这个任务中， Report中有67+%的词是来自Conversation， 所以CopyNet， Pointer network应该会更好，但是由于对PaddlePaddle不太熟悉，不会实现这样的网络。。。
+4. 在用seq2seq产生自然语言时， 引入Reinforcement Learning通常是非常有效的，可以解决训练和测试目标不匹配的问题（训练是看每个时刻的分类误差， 而测试时是用ROUGE， BLEU之类的整句的评估算法）， 但是同样没能实现。
+5. 这是我第一次使用PaddlePaddle， 使用的版本好像是paddle_v2 0.11， 总体来说PaddlePaddle使用还可以，实现基本功能的网络比较简单，参考样例代码就可以； 但是由于提供的api有些少，同时官方的文档相比tf和pytorch不够详尽，所以在想实现Pointer network 或者 Reinforcement Learning 等复杂些的网络和功能时就有些吃力。 PaddlePaddle 目前推出了Fluid版本，好像功能强大了不少，感兴趣的同学可以关注一下。
+6. PaddlePaddle我感觉最强大的功能就是处理文本数据的时候，在一个batch里可以支持边长的输入， 也就是说你完全不需要考虑paddling的问题， 我觉得这个对于做NLP任务的同学真的是太方便了。
 
-
-
-> Written with [StackEdit](https://stackedit.io/).
+## PS:
+1. 虽然我的代码已经开源了，汽车大师的数据好像在科赛网上也能访问到，但是，按照科赛网提供的CPU环境+2小时限时，是没法正常完成训练的……
+2. 如果有想用PaddlePaddle做类似文本任务的同学，我在博客中介绍的零散思路和我的代码可能会有所帮助， 如果真能起到一点点的帮助作用，那么我写这期博客的目的就达到了90%。
+3. 毕竟还有10%的目的是想记录下自己人生第一个AI比赛冠军(*\^__^*) 。
 <!--stackedit_data:
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IOWmguS9leeUqFBhZGRsZV
 BhZGRsZeWBmuaRmOimgVxuYXV0aG9yOiBNaWFvXG50YWdzOiAn
 RGVlcExlYXJuaW5nLFBhZGRsZVBhZGRsZSxTZXEyU2VxJ1xuY2
-F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOls2ODc3ODc0Mzcs
-LTMyNTQ1ODU0NiwtMTE5Nzg5NjYyNiwyMDg1NzExNTc4LC0xNj
-M5NjEzMTI3LDQ5NzE0ODYwOCw0MzYxMDQzODEsLTE4NDgzNjU2
-Nyw0NDEzOTk5NTYsLTE2NDUxODY3NDYsLTkxNzk1OTExMSwtNz
-U0NDYyOTYzLDI5MDQ2MzIzLDE0NzYwODg0ODksNzE5Mjc4Mjkx
-LC0yMDEzMDA5MTMzLC0yMTcwNDQxMzAsLTU4NDcxOTEyMCwtMT
-I0NDIwNzAyMSwxNjY3ODA3NTZdfQ==
+F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOlsxNDU4MDMwMzQz
+LC0zMjU0NTg1NDYsLTExOTc4OTY2MjYsMjA4NTcxMTU3OCwtMT
+YzOTYxMzEyNyw0OTcxNDg2MDgsNDM2MTA0MzgxLC0xODQ4MzY1
+NjcsNDQxMzk5OTU2LC0xNjQ1MTg2NzQ2LC05MTc5NTkxMTEsLT
+c1NDQ2Mjk2MywyOTA0NjMyMywxNDc2MDg4NDg5LDcxOTI3ODI5
+MSwtMjAxMzAwOTEzMywtMjE3MDQ0MTMwLC01ODQ3MTkxMjAsLT
+EyNDQyMDcwMjEsMTY2NzgwNzU2XX0=
 -->
