@@ -56,7 +56,7 @@ QA问题的一种解决办法是进行问题匹配， 面对一个问题q，从�
 
 ## 心得
 
-总结一下zhengge
+总结一下整个比赛过程，haishi
 paddle心得
 pointer network, reinforcement learning
 
@@ -67,10 +67,10 @@ pointer network, reinforcement learning
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IOWmguS9leeUqFBhZGRsZV
 BhZGRsZeWBmuaRmOimgVxuYXV0aG9yOiBNaWFvXG50YWdzOiAn
 RGVlcExlYXJuaW5nLFBhZGRsZVBhZGRsZSxTZXEyU2VxJ1xuY2
-F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOls0NzczNjY2MjAs
-LTE4NDgzNjU2Nyw0NDEzOTk5NTYsLTE2NDUxODY3NDYsLTkxNz
-k1OTExMSwtNzU0NDYyOTYzLDI5MDQ2MzIzLDE0NzYwODg0ODks
-NzE5Mjc4MjkxLC0yMDEzMDA5MTMzLC0yMTcwNDQxMzAsLTU4ND
-cxOTEyMCwtMTI0NDIwNzAyMSwxNjY3ODA3NTYsLTI0Mzk1NDU2
-XX0=
+F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOls0MzYxMDQzODEs
+NDc3MzY2NjIwLC0xODQ4MzY1NjcsNDQxMzk5OTU2LC0xNjQ1MT
+g2NzQ2LC05MTc5NTkxMTEsLTc1NDQ2Mjk2MywyOTA0NjMyMywx
+NDc2MDg4NDg5LDcxOTI3ODI5MSwtMjAxMzAwOTEzMywtMjE3MD
+Q0MTMwLC01ODQ3MTkxMjAsLTEyNDQyMDcwMjEsMTY2NzgwNzU2
+LC0yNDM5NTQ1Nl19
 -->
