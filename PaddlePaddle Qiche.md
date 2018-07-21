@@ -60,7 +60,7 @@ QA问题的一种解决办法是进行问题匹配， 面对一个问题q，从�
 1. 我认为绑定Decoder softmax 层的参数矩阵和embedding层的参数是有效果的，但是由于我代码写的有点问题，这个绑定限制了我的网络结构中embedding size和 GRU的 hidden size必须一致，导致我后面把hidden size增加到1024时，embedding size也必须到1024， 我感觉hidden size到1024还可以，甚至更大都行，但是embedding size到512就已经不小了， 实际可以在gru decode之后再加一层，从hidden size 降到embedding size之后， 再过绑定的softmax 就可以了， 当时没有做，可能有效果。
 2. 把GRU换成LSTM有可能还会好一点？
 3. 在摘要中使用CopyNet， Pointer network好像是比较有用的，特别在这个任务中， Report中有67+%的词是来自与Conversation， 所以CopyNet， Pointer network应该会更好，但是由于对paddlepaddle不太熟悉，不会实现这样的网络。。。
-4. 在用seq2seq产生自然语言时， 引入reinforcement learning通常是非常有效的，可以解决训练和测试目标不匹配的问题（训练是看每个时刻的分类误差， 而测试时是用ROUGE， BLEU之类的整句的评估算法）， 但是同样
+4. 在用seq2seq产生自然语言时， 引入reinforcement learning通常是非常有效的，可以解决训练和测试目标不匹配的问题（训练是看每个时刻的分类误差， 而测试时是用ROUGE， BLEU之类的整句的评估算法）， 但是同样不会
 paddle心得
 pointer network, reinforcement learning
 
@@ -71,8 +71,8 @@ pointer network, reinforcement learning
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IOWmguS9leeUqFBhZGRsZV
 BhZGRsZeWBmuaRmOimgVxuYXV0aG9yOiBNaWFvXG50YWdzOiAn
 RGVlcExlYXJuaW5nLFBhZGRsZVBhZGRsZSxTZXEyU2VxJ1xuY2
-F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOlstMTg3NTUzODcx
-OSwtNDU0ODU4NDA4LC0xMTk3ODk2NjI2LDIwODU3MTE1NzgsLT
+F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOlstMzI1NDU4NTQ2
+LC0xODc1NTM4NzE5LC0xMTk3ODk2NjI2LDIwODU3MTE1NzgsLT
 E2Mzk2MTMxMjcsNDk3MTQ4NjA4LDQzNjEwNDM4MSwtMTg0ODM2
 NTY3LDQ0MTM5OTk1NiwtMTY0NTE4Njc0NiwtOTE3OTU5MTExLC
 03NTQ0NjI5NjMsMjkwNDYzMjMsMTQ3NjA4ODQ4OSw3MTkyNzgy
