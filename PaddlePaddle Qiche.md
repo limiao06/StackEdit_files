@@ -56,7 +56,8 @@ QA问题的一种解决办法是进行问题匹配， 面对一个问题q，从�
 
 ## 心得
 
-总结一下整个比赛过程，还是有一些
+总结一下整个比赛过程，还是有一些想法的：
+1. 
 paddle心得
 pointer network, reinforcement learning
 
@@ -67,10 +68,10 @@ pointer network, reinforcement learning
 eyJwcm9wZXJ0aWVzIjoidGl0bGU6IOWmguS9leeUqFBhZGRsZV
 BhZGRsZeWBmuaRmOimgVxuYXV0aG9yOiBNaWFvXG50YWdzOiAn
 RGVlcExlYXJuaW5nLFBhZGRsZVBhZGRsZSxTZXEyU2VxJ1xuY2
-F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOls0OTcxNDg2MDgs
-NDM2MTA0MzgxLDQ3NzM2NjYyMCwtMTg0ODM2NTY3LDQ0MTM5OT
-k1NiwtMTY0NTE4Njc0NiwtOTE3OTU5MTExLC03NTQ0NjI5NjMs
-MjkwNDYzMjMsMTQ3NjA4ODQ4OSw3MTkyNzgyOTEsLTIwMTMwMD
-kxMzMsLTIxNzA0NDEzMCwtNTg0NzE5MTIwLC0xMjQ0MjA3MDIx
-LDE2Njc4MDc1NiwtMjQzOTU0NTZdfQ==
+F0ZWdvcmllczogRExcbiIsImhpc3RvcnkiOlstNTI5MDc5Njc1
+LDQ5NzE0ODYwOCw0MzYxMDQzODEsLTE4NDgzNjU2Nyw0NDEzOT
+k5NTYsLTE2NDUxODY3NDYsLTkxNzk1OTExMSwtNzU0NDYyOTYz
+LDI5MDQ2MzIzLDE0NzYwODg0ODksNzE5Mjc4MjkxLC0yMDEzMD
+A5MTMzLC0yMTcwNDQxMzAsLTU4NDcxOTEyMCwtMTI0NDIwNzAy
+MSwxNjY3ODA3NTYsLTI0Mzk1NDU2XX0=
 -->
