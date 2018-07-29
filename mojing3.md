@@ -18,7 +18,7 @@
 
 为了让选手可以训练问题相似度计算模型，魔镜杯发布了包含25万多个训练样本的训练集，每个训练样本由(label, q1, q2)组成。训练样本中的正例(label=1，也就是说两个句子含义相同) 和负例(label=0，两个句子含义不同)的数目分别是12万多和13万多，基本平衡。而魔镜杯发布的测试集包含17万多个样本，只给出了q1,q2，需要选手自动输出label。
 
-对于这种比赛，数据保护是zhu'ban'fa
+对于这种比赛，数据保护是主办方要考虑的一个问题，不同的比赛风格不同，比如我上一篇博客ti'da]()中
 
 ## 思路
 
@@ -29,5 +29,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDAwNTc0MTYsLTUyOTIyNDkzMF19
+eyJoaXN0b3J5IjpbLTk5MTQ4MDQ0OSwtNTI5MjI0OTMwXX0=
 -->
