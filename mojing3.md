@@ -20,7 +20,7 @@
 
 对于这种比赛，数据保护是主办方要考虑的一个问题，不同的比赛风格不同，比如我[上一篇博客](https://limiao06.github.io/paddle-qiche.html)提到的汽车大师比赛，是利用虚拟化技术，数据放在云端上，无法下载到本地，因此也必须提供云端计算资源。而魔镜杯的方法我感觉非常有特色，那就是先把数据进行“加密”然后再公开，允许选手把数据下载到本地。**下图** 是魔镜杯发布的数据形式，训练集和测试集中的句子并不是以自然语言文本的形式给出的，而是给出了id化的词序列和字序列两种方式，词序列由词id组成，字序列由字id组成，无法直接看懂原句到底是什么。
 
-在魔镜杯提供的数据集中，包含了72万个句子，字粒度的word
+在魔镜杯提供的数据集中，包含了72万个句子，词典大小为2万左右，字典(字粒度的词典)
 
 ## 思路
 
@@ -31,5 +31,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTU1Njk5MjYsLTUyOTIyNDkzMF19
+eyJoaXN0b3J5IjpbMTg3NzQ4NzczNiwtNTI5MjI0OTMwXX0=
 -->
