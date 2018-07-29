@@ -13,7 +13,7 @@
 
 魔镜杯比赛的任务非常明确，就是给定一个句子q1和另一个句子q2，系统自动判断这两个句子的含义是相同(label=1)还是不同(label=0)。
 
-为了让选手可以训练问题相似度计算模型，魔镜杯发布了
+为了让选手可以训练问题相似度计算模型，魔镜杯发布了包含25万多个训练样本的训练集，每个训练样本由(label, q1, q2)组成。
 
 ## 思路
 
@@ -24,5 +24,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0Nzg2NTI4NywtNTI5MjI0OTMwXX0=
+eyJoaXN0b3J5IjpbODk4NjY0ODczLC01MjkyMjQ5MzBdfQ==
 -->
