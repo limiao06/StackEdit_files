@@ -52,7 +52,12 @@ else:
 		return -1	#我不知道
 ```
 
-这时可能会有同学说，哎，你这个规则方法不行啊，存在“我不知道”的情况呢，那确实，所以才需要基于统计学习的方法嘛。 基于规则的方法可以对基于统计学习方法输出的结果进行修正，如果基于规则的方法知道答案，那就用规则方法的答案，否则就使用统计方法的答案。
+这时可能会有同学说，哎，你这个规则方法不行啊，存在“我不知道”的情况呢，那确实，所以才需要基于统计学习的方法嘛。 
+
+**基于规则方法识别测试集的比例**
+
+
+在比赛中，我使用基于规则的方法对基于统计学习方法输出的结果进行修正，如果基于规则的方法知道答案，那就用规则方法的答案，否则就使用统计方法的答案。
 
 此外，可能有同学发现了，这实际上可以增加了训练样本，是的
 
@@ -65,7 +70,7 @@ else:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTI2NDg2NDYsMTE4MDYwOTI3OSwtMT
-Q0MjY0ODEzMCwxNjUwNjUwMzEzLC0yODM0NTI4MzcsLTUyOTIy
-NDkzMF19
+eyJoaXN0b3J5IjpbMTYyMjMwODY5LDExODA2MDkyNzksLTE0ND
+I2NDgxMzAsMTY1MDY1MDMxMywtMjgzNDUyODM3LC01MjkyMjQ5
+MzBdfQ==
 -->
