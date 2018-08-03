@@ -43,11 +43,13 @@
 
 ```
 if q1, q2属于同一个同义集合：
-    return 1
+    return 1	#含义相同
 else:
 	# 假定 q1属于S1, q2属于S2
 	if (S1, r0, S2):
-	
+		return 0	#含义不同
+	else：
+		return 我不知道
 ```
 	
 
@@ -60,7 +62,7 @@ else:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNjM3NzczNywxMTgwNjA5Mjc5LC0xND
+eyJoaXN0b3J5IjpbLTI2NjI1Mzc0MywxMTgwNjA5Mjc5LC0xND
 QyNjQ4MTMwLDE2NTA2NTAzMTMsLTI4MzQ1MjgzNywtNTI5MjI0
 OTMwXX0=
 -->
