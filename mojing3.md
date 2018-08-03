@@ -25,7 +25,7 @@
 
 ### 规则方法
 
-所谓规则，也就是说
+所谓规则，就是利用
 
 ### 机器学习方法
 
@@ -36,6 +36,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzAwMzMzNjksMTY1MDY1MDMxMywtMj
-gzNDUyODM3LC01MjkyMjQ5MzBdfQ==
+eyJoaXN0b3J5IjpbMTUwNDEzNzcyOSwxNjUwNjUwMzEzLC0yOD
+M0NTI4MzcsLTUyOTIyNDkzMF19
 -->
