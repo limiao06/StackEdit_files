@@ -36,7 +36,7 @@
 好了，在明确了r1和r2的特殊性质后，我们可以利用其性质，进行“关系补全”。训练集实际上提供了许多问题实例以及这些实例之间的关系，利用上述的性质2和性质3，我们可以基于训练集给出的实例和部分实例之间的关系，补全更多的实例之间的关系，具体做法可以分为两步：
 
 1. 利用性质2，寻找同义集合：对于训练集中所有“含义相同”的训练样本，可以根据性质2，将问句聚合成为许多个同义集合，同义集合中任意两个问句的含义都相同；
-2. 利用性质3，寻找同义集合间的含义不同关系
+2. 利用性质3，寻找同义集合间的“含义不同关系”： 这个话说起来有些绕，但是其实也很好理解，对于两个同义集合S1和S2，我们不知道这两个集合之间的关系，如果
 
 ### 机器学习方法
 
@@ -47,7 +47,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjQ5ODY4MTIsMTE4MDYwOTI3OSwtMT
-Q0MjY0ODEzMCwxNjUwNjUwMzEzLC0yODM0NTI4MzcsLTUyOTIy
-NDkzMF19
+eyJoaXN0b3J5IjpbMTE1OTU1NjU0MywxMTgwNjA5Mjc5LC0xND
+QyNjQ4MTMwLDE2NTA2NTAzMTMsLTI4MzQ1MjgzNywtNTI5MjI0
+OTMwXX0=
 -->
