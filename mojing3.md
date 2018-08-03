@@ -51,7 +51,8 @@ else:
 	else：
 		return -1	#我不知道
 ```
-	
+
+这时k有同学说，哎，你这个规则方法不行啊，存在“我不知道”的情况呢
 
 ### 机器学习方法
 
@@ -62,7 +63,7 @@ else:
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MjY3ODk4NCwxMTgwNjA5Mjc5LC0xND
-QyNjQ4MTMwLDE2NTA2NTAzMTMsLTI4MzQ1MjgzNywtNTI5MjI0
-OTMwXX0=
+eyJoaXN0b3J5IjpbLTEzMzYxNjI5MjUsMTE4MDYwOTI3OSwtMT
+Q0MjY0ODEzMCwxNjUwNjUwMzEzLC0yODM0NTI4MzcsLTUyOTIy
+NDkzMF19
 -->
