@@ -29,7 +29,8 @@
 
 “含义相同” 和 “含义不同” 在本任务中都属于二元关系，可以作用于两个问题实体q1和q2，构成一个三元组(q1, r, q2)，这里指定r1表示“含义相同”，r2表示“含义不同”。下面我们可以讨论下r1和r2的性质。
 
-* r1和r2都有对称性：即 (q1,r1,q2) 可以导出 (q2,r1,q1)，缩写为 (q1,r1,q2) => (q2,r1,q1)； 同样， (q1,r2,q2) => (q2,r2,q1)
+* r1和r2都有对称性：即 (q1,r1,q2) 可以导出 (q2,r1,q1)，缩写为 (q1,r1,q2) => (q2,r1,q1)； 同样， (q1,r2,q2) => (q2,r2,q1)。 这个很好理解。
+* r1有传递性：  (q1,r1,q2) and  (q2,r1,q3) => (q1)
 
 ### 机器学习方法
 
@@ -40,6 +41,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNzk1Mzg3NiwxNjUwNjUwMzEzLC0yOD
-M0NTI4MzcsLTUyOTIyNDkzMF19
+eyJoaXN0b3J5IjpbLTEwNTExNjM0OTMsMTY1MDY1MDMxMywtMj
+gzNDUyODM3LC01MjkyMjQ5MzBdfQ==
 -->
