@@ -39,6 +39,8 @@
 1. 利用性质2，寻找同义集合：对于训练集中所有“含义相同”的训练样本，可以根据性质2，将问句聚合成为许多个同义集合，同义集合中任意两个问句的含义都相同；
 2. 利用性质3，寻找同义集合间的“含义不同关系”： 这个话说起来有些绕，但是其实也很好理解，举个例子。对于两个同义集合S1和S2，我们一开始不知道这两个集合之间的关系，如果在训练集中我们发现了一个样本(q1, r1, q2)，并且q1属于S1，q2属于S2，那么根据性质2，我们可以导出S1和S2可以合并为一个大的同义集合；那么如果在训练集中我们发现了一个样本(q1, r0, q2)，并且q1属于S1，q2属于S2，那么根据性质3，实际上S1和S2之间就存在“含义不同”的关系，对于S1中的任意一个问句q1'和S2中的任意一个问句q2'，都存在“含义不同的关系”：(q1', r0, q2')。
 
+通过上述这两步，我们可以得到很多同义集合S1,S2,..., 同时还知道了一些同义集合之间存在“含义不同”关系。
+
 ### 机器学习方法
 
 ## 代码
@@ -48,7 +50,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTMwNjY3MzcsMTE4MDYwOTI3OSwtMT
+eyJoaXN0b3J5IjpbLTE1NDM4MjM5MTUsMTE4MDYwOTI3OSwtMT
 Q0MjY0ODEzMCwxNjUwNjUwMzEzLC0yODM0NTI4MzcsLTUyOTIy
 NDkzMF19
 -->
