@@ -33,7 +33,7 @@
 * 性质2： r1有传递性：  (q1,r1,q2) and  (q2,r1,q3) => (q1,r1,q3)，这个也很好理解，如果q1和q2含义相同，q2和q3含义相同，那么q1和q3含义也相同，事实上这时q1,q2,q3构成了一个同义集， 集合中任意两个问句的含义都相同。
 * 性质3： r2有**特殊**的传递性（不知道这个性质较叫什么）： (q1,r1,q2) and  (q2,r2,q3) => (q1,r2,q3)，解释一下，如果q1和q2含义相同，但是q2和q3含义不同，那么q1和q3的含义也就不同，其实也很容易理解。
 
-好了，在明确了r1和r2的特殊性质后，我们可以利用其性质，进行“关系补全”。训练集实际上提供了许多问题实例以及这些实例之间的关系，我们可以利用实例和部分实例之间的关系，补全更多的实例之间的关系
+好了，在明确了r1和r2的特殊性质后，我们可以利用其性质，进行“关系补全”。训练集实际上提供了许多问题实例以及这些实例之间的关系，利用上述的性质2和性质3，我们可以基于训练集给出的实例和部分实例之间的关系，补全更多的实例之间的关系
 
 ### 机器学习方法
 
@@ -44,7 +44,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTQ2MTQ1MzcsMTE4MDYwOTI3OSwtMT
-Q0MjY0ODEzMCwxNjUwNjUwMzEzLC0yODM0NTI4MzcsLTUyOTIy
-NDkzMF19
+eyJoaXN0b3J5IjpbNDYwMTI5MTc1LDExODA2MDkyNzksLTE0ND
+I2NDgxMzAsMTY1MDY1MDMxMywtMjgzNDUyODM3LC01MjkyMjQ5
+MzBdfQ==
 -->
