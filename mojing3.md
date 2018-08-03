@@ -31,7 +31,7 @@
 
 * r1和r2都有对称性：即 (q1,r1,q2) 可以导出 (q2,r1,q1)，缩写为 (q1,r1,q2) => (q2,r1,q1)； 同样， (q1,r2,q2) => (q2,r2,q1)。 这个很好理解。
 * r1有传递性：  (q1,r1,q2) and  (q2,r1,q3) => (q1,r1,q3)，这个也很好理解，如果q1和q2含义相同，q2和q3含义相同，那么q1和q3含义也相同，事实上这时q1,q2,q3构成了一个同义集， 集合中任意两个问句的含义都相同。
-* r2有**特殊**的传递性（不知道这个性质较叫什么）： (q1,r1,q2) and  (q2,r2,q3) => (q1,r2,q3)，解释一下，如果q1和q2含义相同，但是q2和q3含义不同，那么q1和q3的含义也就bo'ton
+* r2有**特殊**的传递性（不知道这个性质较叫什么）： (q1,r1,q2) and  (q2,r2,q3) => (q1,r2,q3)，解释一下，如果q1和q2含义相同，但是q2和q3含义不同，那么q1和q3的含义也就不同，其实也很容易理解。
 
 ### 机器学习方法
 
@@ -42,6 +42,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2NTk1Mjc4MiwxNjUwNjUwMzEzLC0yOD
-M0NTI4MzcsLTUyOTIyNDkzMF19
+eyJoaXN0b3J5IjpbLTE0NDI2NDgxMzAsMTY1MDY1MDMxMywtMj
+gzNDUyODM3LC01MjkyMjQ5MzBdfQ==
 -->
