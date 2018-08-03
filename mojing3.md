@@ -27,7 +27,7 @@
 
 本文所谓规则方法，是指不利用统计学习方法，而仅利用“含义相同”和“含义不同”这两种关系的特点进行推理的方法。
 
-“含义相同” 和 “含义不同” 在本任务中都属于二元关系，可以作用于两个问题实体q1,q2
+“含义相同” 和 “含义不同” 在本任务中都属于二元关系，可以作用于两个问题实体q1和q2，构成一个三元组(q1, r, q2)
 
 ### 机器学习方法
 
@@ -38,6 +38,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYyMjU5MDE5LDE2NTA2NTAzMTMsLTI4Mz
-Q1MjgzNywtNTI5MjI0OTMwXX0=
+eyJoaXN0b3J5IjpbLTEyNzAzMzg0ODMsMTY1MDY1MDMxMywtMj
+gzNDUyODM3LC01MjkyMjQ5MzBdfQ==
 -->
