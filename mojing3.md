@@ -25,7 +25,7 @@
 
 ### 规则方法
 
-本文所谓规则方法，是指不利用统计学习方法，而是利用“含义相同”和“含义不同”这两种关系的特点进行推理的方法。
+本文所谓规则方法，是指不利用统计学习方法，而仅利用“含义相同”和“含义不同”这两种关系的特点进行推理的方法。
 
 ### 机器学习方法
 
@@ -36,6 +36,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0OTk1MjQ3MSwxNjUwNjUwMzEzLC0yOD
-M0NTI4MzcsLTUyOTIyNDkzMF19
+eyJoaXN0b3J5IjpbLTEzMjc3MDMzNjEsMTY1MDY1MDMxMywtMj
+gzNDUyODM3LC01MjkyMjQ5MzBdfQ==
 -->
