@@ -54,10 +54,10 @@ else:
 
 这时可能会有同学说，哎，你这个规则方法不行啊，存在“我不知道”的情况呢，那确实，所以才需要基于统计学习的方法嘛。 
 
+在比赛中，我使用基于规则的方法对基于统计学习方法输出的结果进行修正，如果基于规则的方法知道答案，那就用规则方法的答案，否则就使用统计方法的答案。
+
 **基于规则方法识别测试集的比例**
 
-
-在比赛中，我使用基于规则的方法对基于统计学习方法输出的结果进行修正，如果基于规则的方法知道答案，那就用规则方法的答案，否则就使用统计方法的答案。
 
 ### 机器学习方法
 
@@ -65,12 +65,12 @@ else:
 
 ## 心得
 
-可能有同学发现了，基于规则的方法实际上可以增加了训练样本，是的，但是由于我是利用业余时间随便搞搞，在最后一天简单尝试了一下数据扩充发现没有取得很好的效果，后悔应该早一点试试数据扩充的。
+可能有同学发现了，基于规则的方法实际上可以增加了训练样本，是的，但是由于我是利用业余时间随便搞搞，在最后一天草草尝试了一下数据扩充发现没有取得很好的效果，事后感觉应该早一点试试数据扩充的，可能能进一步提高结果。
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDk4ODg3ODIsMTYyMjMwODY5LDExOD
-A2MDkyNzksLTE0NDI2NDgxMzAsMTY1MDY1MDMxMywtMjgzNDUy
-ODM3LC01MjkyMjQ5MzBdfQ==
+eyJoaXN0b3J5IjpbMTU4NTQ3NjE5MiwxNjIyMzA4NjksMTE4MD
+YwOTI3OSwtMTQ0MjY0ODEzMCwxNjUwNjUwMzEzLC0yODM0NTI4
+MzcsLTUyOTIyNDkzMF19
 -->
