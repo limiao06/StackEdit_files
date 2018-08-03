@@ -41,6 +41,11 @@
 
 通过上述这两步，我们可以得到很多同义集合S1,S2,..., 同时还知道了一些同义集合之间存在“含义不同”关系。这时，对于测试集中的一个样本q1, q2，我们就可以利用上述信息，进行判断了：
 
+if q1, q2属于同一个同义集合：
+    return 1
+else:
+	
+
 ### 机器学习方法
 
 ## 代码
@@ -50,7 +55,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzAyNTcwMzUsMTE4MDYwOTI3OSwtMT
-Q0MjY0ODEzMCwxNjUwNjUwMzEzLC0yODM0NTI4MzcsLTUyOTIy
-NDkzMF19
+eyJoaXN0b3J5IjpbMTMwMDY4MzkyOCwxMTgwNjA5Mjc5LC0xND
+QyNjQ4MTMwLDE2NTA2NTAzMTMsLTI4MzQ1MjgzNywtNTI5MjI0
+OTMwXX0=
 -->
