@@ -76,10 +76,11 @@ SNLI任务是判断两个句子间的语义关系的，比如蕴含（entailment
 
 在上述代码基础上，我做的工作有：
 1. 源代码使用[GloVe](https://nlp.stanford.edu/projects/glove/) (V1) or [fastText](https://fasttext.cc/docs/en/english-vectors.html) 作为预训练的embedding，并且代码中并没有finetune embedding， 我尝试加入了finetune embedding，结果效果并不好；
-2. 在魔镜数据集上测试了各个encoder的性能，结果发现“BLSTMprojEncoder + max pooling” 效果最好，BLSTMprojEncoder的主要区别是加入了一个线性层将BiLSTM的状态进行了映射，然后再经过max/mean pooling；
-3. 对LSTM的层数设置进行了尝试，发现2层效果会更好，但是3层的效果会下降。
-4. 之前使用的都是基于词方法，我同时尝试了基于字的方法，发现效果差不多；
-5. 加入cross validation， 将训练集分成了10份， 以9份作为训练集， 1份作为开发集， 训练了10个模型， 然后ensemble。
+2. 由于这个网络结果对于q1和q2来说不是对称的，因此我在训练时会随机调整q1和q2的顺序；
+3. 在魔镜数据集上测试了各个encoder的性能，结果发现“BLSTMprojEncoder + max pooling” 效果最好，BLSTMprojEncoder的主要区别是加入了一个线性层将BiLSTM的状态进行了映射，然后再经过max/mean pooling；
+4. 对LSTM的层数设置进行了尝试，发现2层效果会更好，但是3层的效果会下降。
+5. 之前使用的都是基于词方法，我同时尝试了基于字的方法，发现效果差不多；
+6. 加入cross validation， 将训练集分成了10份， 以9份作为训练集， 1份作为开发集， 训练了10个模型， 然后ensemble。
 
 
 ## 代码
@@ -104,9 +105,9 @@ SNLI任务是判断两个句子间的语义关系的，比如蕴含（entailment
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MzU3NjExMywtMTY4NzU3NTMxNSwxND
-AxOTY3MTU5LC0xNjg3NTc1MzE1LDE0MDE5NjcxNTksLTE2ODc1
-NzUzMTUsMTQwMTk2NzE1OSwxNDAxOTY3MTU5LDE1ODU0NzYxOT
-IsMTYyMjMwODY5LDExODA2MDkyNzksLTE0NDI2NDgxMzAsMTY1
-MDY1MDMxMywtMjgzNDUyODM3LC01MjkyMjQ5MzBdfQ==
+eyJoaXN0b3J5IjpbNTk2Mzg2Njc1LC0xNjg3NTc1MzE1LDE0MD
+E5NjcxNTksLTE2ODc1NzUzMTUsMTQwMTk2NzE1OSwtMTY4NzU3
+NTMxNSwxNDAxOTY3MTU5LDE0MDE5NjcxNTksMTU4NTQ3NjE5Mi
+wxNjIyMzA4NjksMTE4MDYwOTI3OSwtMTQ0MjY0ODEzMCwxNjUw
+NjUwMzEzLC0yODM0NTI4MzcsLTUyOTIyNDkzMF19
 -->
