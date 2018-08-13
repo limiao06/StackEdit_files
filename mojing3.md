@@ -97,7 +97,7 @@ SNLI任务是判断两个句子间的语义关系的，比如蕴含（entailment
 
 下面总结一下吧：
 1. 由于我的代码设计的有问题，只能要么使用word feature，要么使用char feature， 只能在ensemble时融合两种信息，可能在一个模型里融合这两种信息效果会更好；
-2. 另一个代码设计的问题是只用了max pooling，如果max pooling和mean pooling的结果li
+2. 另一个问题是我的d只能用max pooling或者mean pooling，如果max pooling和mean pooling的结果连接起来一起用可能会更好；
 3. 在调优时，我一开始使用SGD， 发现SGD对于不同的batch size效果不同，我扫描搜索了一下发现batch size不能太大，大概是128左右； 后来尝试了一下ADAM， 发现正好相反， ADAM对于大的batch size 效果比较好， 而小batch size 效果反而差。 这个结论不知道对于其他数据集或者任务是否适用。
 
 可能有同学发现了，基于规则的方法实际上可以增加了训练样本，是的，但是由于我是利用业余时间随便搞搞，在最后一天草草尝试了一下数据扩充发现没有取得很好的效果，事后感觉应该早一点试试数据扩充的，可能能进一步提高结果。
@@ -105,7 +105,7 @@ SNLI任务是判断两个句子间的语义关系的，比如蕴含（entailment
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MTM2NDIwLC0xNjg3NTc1MzE1LDE0MD
+eyJoaXN0b3J5IjpbMzk0Njg5Mzk0LC0xNjg3NTc1MzE1LDE0MD
 E5NjcxNTksLTE2ODc1NzUzMTUsMTQwMTk2NzE1OSwtMTY4NzU3
 NTMxNSwxNDAxOTY3MTU5LDE0MDE5NjcxNTksMTU4NTQ3NjE5Mi
 wxNjIyMzA4NjksMTE4MDYwOTI3OSwtMTQ0MjY0ODEzMCwxNjUw
