@@ -111,7 +111,8 @@ SNLI任务是判断两个句子间的语义关系的，比如蕴含（entailment
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMTk2NzE1OSwxNTg1NDc2MTkyLDE2Mj
-IzMDg2OSwxMTgwNjA5Mjc5LC0xNDQyNjQ4MTMwLDE2NTA2NTAz
-MTMsLTI4MzQ1MjgzNywtNTI5MjI0OTMwXX0=
+eyJoaXN0b3J5IjpbLTE2ODc1NzUzMTUsMTQwMTk2NzE1OSwxNT
+g1NDc2MTkyLDE2MjIzMDg2OSwxMTgwNjA5Mjc5LC0xNDQyNjQ4
+MTMwLDE2NTA2NTAzMTMsLTI4MzQ1MjgzNywtNTI5MjI0OTMwXX
+0=
 -->
