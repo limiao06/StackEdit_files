@@ -54,23 +54,64 @@ else:
 
 这时可能会有同学说，哎，你这个规则方法不行啊，存在“我不知道”的情况呢，那确实，所以才需要基于统计学习的方法嘛。 
 
-在比赛中，我使用基于规则的方法对基于统计学习方法输出的结果进行修正，如果基于规则的方法知道答案，那就用规则方法的答案，否则就使用统计方法的答案。
+在比赛中，我使用基于规则的方法对基于统计机器学习方法输出的结果进行修正，如果基于规则的方法知道答案，那就用规则方法的答案，否则就使用统计方法的答案。
 
-**基于规则方法识别测试集的比例**
+**通过统计，基于规则的方法识别测试集的比例**
 
 
 ### 机器学习方法
 
 ## 代码
 
+## 心得可以处理测试集中 **10.54%** 的样本，这个比例不算低了吧。
+
+### 机器学习方法
+
+之前提到过，我并不是很熟悉这个任务， 碰巧前段时间看过FAIR的一篇利用SNLI数据集有监督地训练句子向量表示的论文"[Supervised Learning of Universal Sentence Representations from Natural Language Inference Data](https://arxiv.org/abs/1705.02364)"， 感觉任务比较类似，所以就以这个论文的方法为基础进行了尝试。
+
+SNLI任务是判断两个句子间的语义关系的，比如蕴含（entailment）、矛盾（contradiction）、中性（neutral）。上述的论文使用的方法是这样，先使用encoder对两个句子进行编码，得到向量表示u,v， 然后将u,v, |u-v|, u*v 这四个向量连起来，经过一个MLP网络，输出三分类。结果如**下图**所示。
+
+论文对比了多种encoder的效果， 包括：
+* LSTM/GRU-last：使用LSTM或GRU对句子进行编码，然后选最后一个时刻的状态作为句向量表示， 可以单向也可以双向
+* BiLSTM with mean/max pooling： 使用双向LSTM对句子进行编码，然后通过mean/max pooling 得到句子的定长向量表示
+* Self Attention： 在BiLSTM的结果基础上，使用self-attention机制作为pooling方法得到句子的定长向量表示
+* Hierarchical ConvNet： 使用深层（4层）CNN网络对句子进行编码， 然将每层经过max pooling后的定长向量连起来，作为句子的向量表示。
+
+通过实验，该论文给出的结论是： **BiLSTM + max pooling 效果最好。** 
+
+这篇论文在GitHub上有官方的开源代码[InferSent](https://github.com/facebookresearch/InferSent)， 那么直接拿来用就好了。
+
+在上述代码基础上，我做的工作有：
+1. 源代码使用[GloVe](https://nlp.stanford.edu/projects/glove/) (V1) or [fastText](https://fasttext.cc/docs/en/english-vectors.html) 作为预训练的embedding，并且代码中并没有finetune embedding， 我尝试加入了finetune embedding，结果效果并不好；
+2. 在魔镜数据集上测试了各个encoder的性能，结果发现“BLSTMprojEncoder + max pooling” 效果最好，BLSTMprojEncoder的主要区别是加入了一个线性层将BiLSTM的状态进行了映射，然后再经过max/mean pooling；
+3. 对LSTM的层数设置进行了尝试，发现2层效果会更好，但是3层的效果会下降。
+4. 之前使用的都是基于词方法，我同时尝试了基于字的方法，发现效果差不多；
+5. 加入cross validation， 将训练集分成了10份， 以9份作为训练集， 1份作为开发集， 训练了10个模型， 然后ensemble。
+
+
+## 代码
+
+我的代码也公布在了[GitHub](https://github.com/limiao06/mojingbei3)上。
+
+最终我的结果是三个模型ensemble的结果，这三个模型分别是：
+1. 2layer BLSTMprojEncoder + word feature + maxpooling + cv
+2. 1layer BLSTMprojEncoder + word feature + maxpooling + cv
+3. 1layer BLSTMprojEncoder + char feature + maxpooling + cv
+
+当然最后的结果还使用规则系统的方法修正了一下。
+
 ## 心得
+
+下面总结一下吧：
+1. 由于我的代码设计的有问题，只能要么使用word feature，要么使用char feature， 只能在ensemble时融合两种信息，可能在一个模型里融合这两种信息效果会更好；
+2. 在调优时，我一开始使用SGD， 发现SGD对于不同的batch size效果不同，我扫描搜索了一下发现batch size不能太大，大概是128左右； 后来尝试了一下ADAM， 发现正好相反， ADAM对于大的batch size 效果比较好， 而小batch size 效果反而差。 这个结论不知道对于其他数据集或者任务是否适用。
 
 可能有同学发现了，基于规则的方法实际上可以增加了训练样本，是的，但是由于我是利用业余时间随便搞搞，在最后一天草草尝试了一下数据扩充发现没有取得很好的效果，事后感觉应该早一点试试数据扩充的，可能能进一步提高结果。
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NTQ3NjE5MiwxNjIyMzA4NjksMTE4MD
-YwOTI3OSwtMTQ0MjY0ODEzMCwxNjUwNjUwMzEzLC0yODM0NTI4
-MzcsLTUyOTIyNDkzMF19
+eyJoaXN0b3J5IjpbMTQwMTk2NzE1OSwxNTg1NDc2MTkyLDE2Mj
+IzMDg2OSwxMTgwNjA5Mjc5LC0xNDQyNjQ4MTMwLDE2NTA2NTAz
+MTMsLTI4MzQ1MjgzNywtNTI5MjI0OTMwXX0=
 -->
