@@ -56,14 +56,7 @@ else:
 
 在比赛中，我使用基于规则的方法对基于统计机器学习方法输出的结果进行修正，如果基于规则的方法知道答案，那就用规则方法的答案，否则就使用统计方法的答案。
 
-**通过统计，基于规则的方法识别测试集的比例**
-
-
-### 机器学习方法
-
-## 代码
-
-## 心得可以处理测试集中 **10.54%** 的样本，这个比例不算低了吧。
+**通过统计，基于规则的方法可以处理测试集中 **10.54%** 的样本，这个比例不算低了吧。
 
 ### 机器学习方法
 
@@ -111,9 +104,9 @@ SNLI任务是判断两个句子间的语义关系的，比如蕴含（entailment
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODc1NzUzMTUsMTQwMTk2NzE1OSwtMT
-Y4NzU3NTMxNSwxNDAxOTY3MTU5LC0xNjg3NTc1MzE1LDE0MDE5
-NjcxNTksLTE2ODc1NzUzMTUsMTQwMTk2NzE1OSwxNTg1NDc2MT
-kyLDE2MjIzMDg2OSwxMTgwNjA5Mjc5LC0xNDQyNjQ4MTMwLDE2
-NTA2NTAzMTMsLTI4MzQ1MjgzNywtNTI5MjI0OTMwXX0=
+eyJoaXN0b3J5IjpbMjE0NTMzNzg4NCwtMTY4NzU3NTMxNSwxND
+AxOTY3MTU5LC0xNjg3NTc1MzE1LDE0MDE5NjcxNTksLTE2ODc1
+NzUzMTUsMTQwMTk2NzE1OSwxNDAxOTY3MTU5LDE1ODU0NzYxOT
+IsMTYyMjMwODY5LDExODA2MDkyNzksLTE0NDI2NDgxMzAsMTY1
+MDY1MDMxMywtMjgzNDUyODM3LC01MjkyMjQ5MzBdfQ==
 -->
