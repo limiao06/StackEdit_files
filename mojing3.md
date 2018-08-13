@@ -103,9 +103,8 @@ SNLI任务是判断两个句子间的语义关系的，比如蕴含（entailment
 4. 可能有同学发现了，基于规则的方法实际上可以增加了训练样本，是的，但是由于我是利用业余时间随便搞搞，在最后一天草草尝试了一下数据扩充发现没有取得很好的效果，事后感觉应该早一点试试数据扩充的，可能能进一步提高结果。
 
 
-> Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk2Mzg2Njc1LC0xNjg3NTc1MzE1LDE0MD
+eyJoaXN0b3J5IjpbMjg4MTExNjA3LC0xNjg3NTc1MzE1LDE0MD
 E5NjcxNTksLTE2ODc1NzUzMTUsMTQwMTk2NzE1OSwtMTY4NzU3
 NTMxNSwxNDAxOTY3MTU5LDE0MDE5NjcxNTksMTU4NTQ3NjE5Mi
 wxNjIyMzA4NjksMTE4MDYwOTI3OSwtMTQ0MjY0ODEzMCwxNjUw
