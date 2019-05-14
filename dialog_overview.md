@@ -30,12 +30,16 @@
 
 ### 3. 有哪些类型的对话系统
 
-对话系统有一些不同的分类体系，按照在对话中谁处于主导地位区分，对话系统可以分为：系统主导、用户主导和混合主导。按照对话系统是否用于解决具体任务区分，对话系统
+对话系统有一些不同的分类体系。按照在对话中谁处于主导地位区分，对话系统可以分为：系统主导、用户主导和混合主导。按照对话系统是否用于解决具体任务区分，对话系统可以分为面向任务的对话系统（Task-oriented dialog system）和聊天机器人（ChatBot）。
+
+### 4. 本文要介绍哪些对话系统
+
+本文主要关注于第二种对话系统分类体系，分别介绍对面向任务的对话系统和聊天机器人两类对话系统的基本概念、研究情况、研究方向等内容。
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM1MjY4Mjc4LC0yMDYzNDA3MDQwLC0xMT
-U2Njg1MTcyLDEyMzc1OTc5NzddfQ==
+eyJoaXN0b3J5IjpbLTE5NjI4OTE0MjksLTIwNjM0MDcwNDAsLT
+ExNTY2ODUxNzIsMTIzNzU5Nzk3N119
 -->
