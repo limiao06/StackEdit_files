@@ -34,16 +34,16 @@
 
 ### 4. 本文要介绍哪些对话系统
 
-本文主要关注于第二种对话系统分类体系，分别介绍对面向任务的对话系统和聊天机器人两类对话系统的基本概念、研究情况、研究方向等内容。
+本文主要关注于第二种对话系统分类体系，分别介绍任务型和聊天机器人两类对话系统的基本概念、研究情况、研究方向等内容。
 
 ## 二、面向任务的对话系统
 
-面向任务的dui'h
+面向任务的对话系统（Task-oriented dialog system），顾名思义，是希望通过自然对话，帮助用户达成某种特定任务，比如预定机票、查询餐厅等。
 
 ## 三、聊天机器人
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjMwNTEyMDYsLTYzNzY5ODg3NiwtMj
-A2MzQwNzA0MCwtMTE1NjY4NTE3MiwxMjM3NTk3OTc3XX0=
+eyJoaXN0b3J5IjpbLTIwODIxMTk5MCwtNjM3Njk4ODc2LC0yMD
+YzNDA3MDQwLC0xMTU2Njg1MTcyLDEyMzc1OTc5NzddfQ==
 -->
