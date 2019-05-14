@@ -22,11 +22,11 @@
 
 ### 2. 对话系统的历史
 
-对话系统的历史非常悠久，在计算机诞生之初，“人工智能之父”阿兰图灵在著名的“图灵测试”中，就提出了对话系统的概念，也开启了对话系统的研究。早期的对话系统研究目的是为了通过图灵测试，例如产生于上世纪60年代的“Eliza”系统，这个使用了一些简单规则的对话系统可以模拟一个心理医生的谈话风格，感兴趣的读者可以通过这个[链接]([https://www.eclecticenergies.com/ego/eliza](https://www.eclecticenergies.com/ego/eliza))和这个系统聊一聊
+对话系统的历史非常悠久，在计算机诞生之初，“人工智能之父”阿兰图灵在著名的“图灵测试”中，就提出了对话系统的概念，也开启了对话系统的研究。早期的对话系统研究目的是为了通过图灵测试，例如产生于上世纪60年代的“Eliza”系统，这个使用了一些简单规则的对话系统可以模拟一个心理医生的谈话风格，感兴趣的读者可以通过这个[链接](https://www.eclecticenergies.com/ego/eliza)和这个系统聊一聊，在一开始你可能会惊讶于这个系统的智能程度，但聊一阵子之后，
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0ODA2MDQ3MSwtMjA2MzQwNzA0MCwtMT
-E1NjY4NTE3MiwxMjM3NTk3OTc3XX0=
+eyJoaXN0b3J5IjpbNjA3NzI1MTU5LC0yMDYzNDA3MDQwLC0xMT
+U2Njg1MTcyLDEyMzc1OTc5NzddfQ==
 -->
