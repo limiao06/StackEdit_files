@@ -30,11 +30,12 @@
 
 ### 3. 有哪些类型的对话系统
 
+对话系统有一些不同的分类体系，按照在对话中谁处于主导地位区分，对话系统可以分为：系统主导、用户主导和混合主导。按照对话系统是否用于解决具体任务区分，对话系统
 
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNDQzMDkzNSwtMjA2MzQwNzA0MCwtMT
-E1NjY4NTE3MiwxMjM3NTk3OTc3XX0=
+eyJoaXN0b3J5IjpbNzM1MjY4Mjc4LC0yMDYzNDA3MDQwLC0xMT
+U2Njg1MTcyLDEyMzc1OTc5NzddfQ==
 -->
