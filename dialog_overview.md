@@ -28,9 +28,13 @@
 
 近年来，随着技术的进步，学术界和工业界又引发了对话系统的关注研究热潮。在学术界，机器学习、深度学习、强化学习等技术开始应用于对话系统的研究；在工业界，不少互联网公司提出了对话即服务的口号，认为对话系统会成为下一代人机交互方式，投入了大量的人力物力。
 
+### 3. 有哪些类型的对话系统
+
+
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzI4ODU3MjUsLTIwNjM0MDcwNDAsLT
-ExNTY2ODUxNzIsMTIzNzU5Nzk3N119
+eyJoaXN0b3J5IjpbMTUwNDQzMDkzNSwtMjA2MzQwNzA0MCwtMT
+E1NjY4NTE3MiwxMjM3NTk3OTc3XX0=
 -->
