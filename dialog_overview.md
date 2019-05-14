@@ -18,9 +18,9 @@
 
 在生活中，我们可能听说过或者实际使用过多种人机交互系统，比如：操作系统、搜索引擎、问答系统、推荐系统等，对话系统和这些人机交互系统相比，有何独特之处呢？
 
-首先是交互媒介不同：对于
+首先是交互媒介不同：交互媒介大体可以理解为输入方式和输出方式
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMTIwNzkzNiwxMjM3NTk3OTc3XX0=
+eyJoaXN0b3J5IjpbLTg2NTE4NTMwNCwxMjM3NTk3OTc3XX0=
 -->
