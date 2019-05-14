@@ -22,11 +22,11 @@
 
 ### 2. 对话系统的历史
 
-可以说，对话系统的历史非常悠久
+可以说，对话系统的历史非常悠久，在计算机诞生之初，“人工智能之父”阿兰图灵就提出了对话系统的概念，
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMjU5NjM5LC0xMTU2Njg1MTcyLDEyMz
-c1OTc5NzddfQ==
+eyJoaXN0b3J5IjpbLTIwNjM0MDcwNDAsLTExNTY2ODUxNzIsMT
+IzNzU5Nzk3N119
 -->
