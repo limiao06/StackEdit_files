@@ -6,11 +6,16 @@
 
 ## 概述
 
-在阅读完本节之后，希望可以帮助读者回答几个个问题：
-1. 什么是对话系统？
-2. 
+在阅读完本节之后，希望可以帮助读者回答下面四个问题：
+1. 什么是对话系统
+2. 对话系统的简要历史
+3. 对话系统的分类
+4. 本文要介绍哪些对话系统
+
+### 1. 什么是对话系统
+
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NDYxNTk1MCwxMjM3NTk3OTc3XX0=
+eyJoaXN0b3J5IjpbMjAyNjA3OTk1MiwxMjM3NTk3OTc3XX0=
 -->
