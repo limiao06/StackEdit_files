@@ -14,9 +14,9 @@
 
 ### 1. 什么是对话系统
 
-简要的说，对话系统是一种以自然语言为交互媒介的（多轮）人机交互系统。根据这个定义看，对话系统和其他人机交互系统相比，有两个典型的特点。
+简要的说，对话系统是一种以【自然语言】为交互媒介的【多轮】人机交互系统。根据这个定义看，对话系统和其他人机交互系统相比，有两个典型的特点。
 
-特点一：以自然语言为交互媒介。
+特点一：以自然语言为交互媒介。对于我们进场使
 
 对话系统是一种人机交互系统，人机交互系统是我们人类和计算机进行交互必须使用的系统。在这里，我们希望通过对比几种常见的人机交互系统，来理解什么是对话系统，对话系统有什么特点。 
 
@@ -38,6 +38,6 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTk3ODc5NzIsLTExNTY2ODUxNzIsMT
-IzNzU5Nzk3N119
+eyJoaXN0b3J5IjpbNjgzOTgwMzI1LC0xMTU2Njg1MTcyLDEyMz
+c1OTc5NzddfQ==
 -->
