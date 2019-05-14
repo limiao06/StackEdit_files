@@ -2,9 +2,9 @@
 
 ## 前面的话
 
-本文是一篇偏科普性质的对话系统综述，希望可以帮助那些计划了解对话系统领域的同学进行初步的入门，如果想在对话系统这一领域进行更深入的学习和研究，建议阅读更加专业的对话系统综述论文。
+本文是一篇偏科普性质的对话系统综述，希望可以帮助那些计划了解对话系统的同学进行初步的入门，如果想在对话系统这一领域进行更深入的学习和研究，建议阅读更加专业的对话系统综述论文。
 
-## 概述
+## 一、概述
 
 在阅读完本节之后，希望可以帮助读者回答下面四个问题：
 1. 什么是对话系统
@@ -36,12 +36,14 @@
 
 本文主要关注于第二种对话系统分类体系，分别介绍对面向任务的对话系统和聊天机器人两类对话系统的基本概念、研究情况、研究方向等内容。
 
-## 面向任务的对话系统
+## 二、面向任务的对话系统
 
 
+
+## 三、聊天机器人
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NDMxMjAwLC0yMDYzNDA3MDQwLC0xMT
-U2Njg1MTcyLDEyMzc1OTc5NzddfQ==
+eyJoaXN0b3J5IjpbLTYzNzY5ODg3NiwtMjA2MzQwNzA0MCwtMT
+E1NjY4NTE3MiwxMjM3NTk3OTc3XX0=
 -->
