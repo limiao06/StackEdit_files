@@ -20,10 +20,13 @@
 
 特点二：多轮交互系统。提到对话系统，通常有一个隐含的意思，就是涉及多轮的交互，多轮交互系统在产生系统响应时，需要综合考虑交互历史和当前的用户输入，相比单轮交互系统（比如搜索引擎和问答系统），多轮交互系统的难度会显著增加。
 
+### 2. 对话系统的历史
+
+可以说，对话系统的历史非常悠久
 
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzUzNDE1LC0xMTU2Njg1MTcyLDEyMz
+eyJoaXN0b3J5IjpbLTMwMjU5NjM5LC0xMTU2Njg1MTcyLDEyMz
 c1OTc5NzddfQ==
 -->
