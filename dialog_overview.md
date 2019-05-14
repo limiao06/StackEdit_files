@@ -38,12 +38,12 @@
 
 ## 二、面向任务的对话系统
 
-面向任务的对话系统（Task-oriented dialog system），顾名思义，是希望通过自然对话，帮助用户达成某种特定任务，比如预定机票、查询餐厅等，这类对话系统倾向于帮助用户解决稍微复杂的（难以用单轮交互达成的）任务
+面向任务的对话系统（Task-oriented dialog system），顾名思义，是希望通过自然语言对话，帮助用户达成某种特定任务（比如预定机票、查询餐厅等）的计算机系统，这类对话系统通常是帮助用户解决稍微复杂的（难以用单轮交互达成的）任务。
 
 ## 三、聊天机器人
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY5MTU0MzA0LC02Mzc2OTg4NzYsLTIwNj
+eyJoaXN0b3J5IjpbNTEyODIxNDQyLC02Mzc2OTg4NzYsLTIwNj
 M0MDcwNDAsLTExNTY2ODUxNzIsMTIzNzU5Nzk3N119
 -->
