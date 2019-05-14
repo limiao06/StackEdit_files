@@ -13,9 +13,11 @@
 4. 本文要介绍哪些对话系统
 
 ### 1. 什么是对话系统
+在这里，我们系统通过对比几种常见的系统，来理解什么是对话系统，对话系统有什么特点。 
 
+首先，对话系统属于一种人机交互系统，在生活中，我们可能听说过或者实际使用过多种系统/技术，比如：操作系统、搜索引擎、问答系统、推荐系统。
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNjA3OTk1MiwxMjM3NTk3OTc3XX0=
+eyJoaXN0b3J5IjpbLTIwOTczMjMxODIsMTIzNzU5Nzk3N119
 -->
