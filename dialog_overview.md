@@ -26,7 +26,7 @@
 
 随后，研究人员认为能够帮助用户完成特定任务的对话系统拥有更大的商业价值，在上世纪90年代，美国国防部高级研究计划局（DARPA）启动了航空旅行信息系统（ATIS）项目，开启了口语对话系统的研究。在同一时期，AT&T公司开发了最早的商用对话系统How May I Help You（HMIHY），提供帮助用户解决转接电话、查询账单、查询区号等14种服务，该系统于2001年正式部署，曾达到平均每月处理1500万个电话，是最成功的商用对话系统之一。
 
-近年来，随着技术的进步，学术界和工业界又引发了对话系统的关注研究热潮。在学术界，机器学习、深度学习、强化学习等技术开始应用于对话系统的研究；在工业界，不少互联网公司提出了对话即服务的口号，认为对话系统会成为下一代最主要的人机交互方式，有巨大的商业价值，投入了大量的人力物力。
+近年来，随着技术的进步，学术界和工业界又引发了对话系统的关注研究热潮。在学术界，机器学习、深度学习、强化学习等技术开始应用于对话系统的研究；在工业界，不少互联网公司提出了对话即服务的口号，认为对话系统会成为下一代最主要的人机交互方式，拥有巨大的商业价值，因此投入了大量的人力物力。
 
 ### 3. 有哪些类型的对话系统
 
@@ -65,9 +65,9 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY5NjYwNDU1LC05MDI0NDE3NjUsLTEzNj
-c2ODAyNjgsMTU4ODEwMzE2NSwxODc5MjkyNzU3LDU1Njc3ODQ4
-MSw3NDE2NjAxNDUsMTY3ODM4ODc3Niw1MTI4MjE0NDIsLTYzNz
-Y5ODg3NiwtMjA2MzQwNzA0MCwtMTE1NjY4NTE3MiwxMjM3NTk3
-OTc3XX0=
+eyJoaXN0b3J5IjpbLTYxODE1MTMxNCwtOTAyNDQxNzY1LC0xMz
+Y3NjgwMjY4LDE1ODgxMDMxNjUsMTg3OTI5Mjc1Nyw1NTY3Nzg0
+ODEsNzQxNjYwMTQ1LDE2NzgzODg3NzYsNTEyODIxNDQyLC02Mz
+c2OTg4NzYsLTIwNjM0MDcwNDAsLTExNTY2ODUxNzIsMTIzNzU5
+Nzk3N119
 -->
