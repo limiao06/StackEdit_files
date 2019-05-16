@@ -26,11 +26,11 @@
 
 随后，研究人员认为能够帮助用户完成特定任务的对话系统拥有更大的商业价值，在上世纪90年代，美国国防部高级研究计划局（DARPA）启动了航空旅行信息系统（ATIS）项目，开启了口语对话系统的研究。在同一时期，AT&T公司开发了最早的商用对话系统How May I Help You（HMIHY），提供帮助用户解决转接电话、查询账单、查询区号等14种服务，该系统于2001年正式部署，曾达到平均每月处理1500万个电话，是最成功的商用对话系统之一。
 
-近年来，随着技术的进步，学术界和工业界又引发了对话系统的关注研究热潮。在学术界，机器学习、深度学习、强化学习等技术开始应用于对话系统的研究；在工业界，不少互联网公司提出了对话即服务的口号，认为对话系统会成为下一代人机交互方式，投入了大量的人力物力。
+近年来，随着技术的进步，学术界和工业界又引发了对话系统的关注研究热潮。在学术界，机器学习、深度学习、强化学习等技术开始应用于对话系统的研究；在工业界，不少互联网公司提出了对话即服务的口号，认为对话系统会成为下一代最主要的人机交互方式，有巨大的商业价值，投入了大量的人力物力。
 
 ### 3. 有哪些类型的对话系统
 
-对话系统有一些不同的分类体系。按照在对话中谁处于主导地位区分，对话系统可以分为：系统主导、用户主导和混合主导。按照对话系统是否用于解决具体任务区分，对话系统可以分为面向任务的对话系统（Task-oriented dialog system）和聊天机器人（ChatBot）。
+对话系统有一些不同的分类体系。按照在对话中谁处于主导地位区分，对话系统可以分为：系统主导、用户主导和混合主导。按照对话系统是否用于解决具体任务区分，对话系统可以分为面向任务的对话系统（Task-Oriented Dialog System）和聊天机器人（ChatBot）。
 
 ### 4. 本文要介绍哪些对话系统
 
@@ -46,7 +46,7 @@
 
 ### 1. 基本概念
 
-面向任务的对话系统（Task-oriented dialog system），顾名思义，是希望通过自然语言对话，帮助用户达成某种特定任务（比如预定机票、查询餐厅等）的计算机系统，这类对话系统通常是帮助用户解决稍微复杂的（难以用单轮交互达成的）任务。
+面向任务的对话系统（Task-Oriented Dialog System），顾名思义，是希望通过自然语言对话，帮助用户达成某种特定任务（比如预定机票、查询餐厅等）的计算机系统，这类对话系统通常是帮助用户解决稍微复杂的（难以用单轮交互达成的）任务。
 
 在了解对话系统的组成结构之前，有必要多费些口舌，帮助读者理解【领域】这个概念，以及对话系统的【工作过程】。
 
@@ -56,15 +56,18 @@
 
 ### 2. 系统组成
 
+### 3. 现有研究情况
 
+### 4. 未来方向
 
 
 ## 三、聊天机器人
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMjQ0MTc2NSwtMTM2NzY4MDI2OCwxNT
-g4MTAzMTY1LDE4NzkyOTI3NTcsNTU2Nzc4NDgxLDc0MTY2MDE0
-NSwxNjc4Mzg4Nzc2LDUxMjgyMTQ0MiwtNjM3Njk4ODc2LC0yMD
-YzNDA3MDQwLC0xMTU2Njg1MTcyLDEyMzc1OTc5NzddfQ==
+eyJoaXN0b3J5IjpbMzY5NjYwNDU1LC05MDI0NDE3NjUsLTEzNj
+c2ODAyNjgsMTU4ODEwMzE2NSwxODc5MjkyNzU3LDU1Njc3ODQ4
+MSw3NDE2NjAxNDUsMTY3ODM4ODc3Niw1MTI4MjE0NDIsLTYzNz
+Y5ODg3NiwtMjA2MzQwNzA0MCwtMTE1NjY4NTE3MiwxMjM3NTk3
+OTc3XX0=
 -->
