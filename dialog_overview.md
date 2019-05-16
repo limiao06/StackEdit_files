@@ -1,4 +1,4 @@
-# 对话系统综述
+# 对话系统综述（简要）
 
 ## 前面的话
 
@@ -38,12 +38,27 @@
 
 ## 二、面向任务的对话系统
 
+在阅读完本节之后，希望可以帮助读者回答关于面向任务对话系统的下面几个问题：
+1. 基本概念
+2. 系统组成
+3. 现有研究情况
+4. 未来研究方向
+
+### 1. 基本概念
+
 面向任务的对话系统（Task-oriented dialog system），顾名思义，是希望通过自然语言对话，帮助用户达成某种特定任务（比如预定机票、查询餐厅等）的计算机系统，这类对话系统通常是帮助用户解决稍微复杂的（难以用单轮交互达成的）任务。
+
+为了之后的介绍方便，下面要谈论一些名词术语和概念。
+
+* 【领域】：既然对话系统要帮助用户达成某种特定任务，那么这个任务一定是和某个领域相关的，比如是机票、餐馆、点歌等。
+* 【领域知识】：领域通常需要一个后端知识库描述，例如
+
 
 ## 三、聊天机器人
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTEyODIxNDQyLC02Mzc2OTg4NzYsLTIwNj
-M0MDcwNDAsLTExNTY2ODUxNzIsMTIzNzU5Nzk3N119
+eyJoaXN0b3J5IjpbMTY3ODM4ODc3Niw1MTI4MjE0NDIsLTYzNz
+Y5ODg3NiwtMjA2MzQwNzA0MCwtMTE1NjY4NTE3MiwxMjM3NTk3
+OTc3XX0=
 -->
