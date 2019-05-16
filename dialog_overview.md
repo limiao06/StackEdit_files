@@ -56,6 +56,8 @@
 
 ### 2. 系统组成
 
+如果你不是很了解对话系统，也不清楚对话系统的基本组成，那么
+
 ### 3. 现有研究情况
 
 ### 4. 未来方向
@@ -69,9 +71,9 @@
 > [2] 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0ODU1NzI0OSwtOTAyNDQxNzY1LC0xMz
-Y3NjgwMjY4LDE1ODgxMDMxNjUsMTg3OTI5Mjc1Nyw1NTY3Nzg0
-ODEsNzQxNjYwMTQ1LDE2NzgzODg3NzYsNTEyODIxNDQyLC02Mz
-c2OTg4NzYsLTIwNjM0MDcwNDAsLTExNTY2ODUxNzIsMTIzNzU5
-Nzk3N119
+eyJoaXN0b3J5IjpbNDQyODM2MTIwLC05MDI0NDE3NjUsLTEzNj
+c2ODAyNjgsMTU4ODEwMzE2NSwxODc5MjkyNzU3LDU1Njc3ODQ4
+MSw3NDE2NjAxNDUsMTY3ODM4ODc3Niw1MTI4MjE0NDIsLTYzNz
+Y5ODg3NiwtMjA2MzQwNzA0MCwtMTE1NjY4NTE3MiwxMjM3NTk3
+OTc3XX0=
 -->
