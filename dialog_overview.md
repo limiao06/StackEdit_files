@@ -48,7 +48,7 @@
 
 面向任务的对话系统（Task-oriented dialog system），顾名思义，是希望通过自然语言对话，帮助用户达成某种特定任务（比如预定机票、查询餐厅等）的计算机系统，这类对话系统通常是帮助用户解决稍微复杂的（难以用单轮交互达成的）任务。
 
-在了解对话系统的组成结构之前，有必要多费些口舌讨论一下【领域】这个概念，以及对话系统的【工作过程】。
+在了解对话系统的组成结构之前，有必要多费些口舌，帮助读者理解【领域】这个概念，以及对话系统的【工作过程】。
 
 * 【领域】：既然对话系统要帮助用户达成某种特定任务，那么这个任务一定是和某个特定领域相关的，比如是机票、餐馆、点歌等。因此，面向任务的对话系统基本上是限定领域的对话系统。领域通常需要一个后端知识库描述，知识库需要包含可以描述这一领域相关任务的一组概念，或者一些数据实体。以餐馆领域为例，后端知识库可以由一个数据库表示，数据库中的数据项是各个餐厅，每个餐厅有一些描述的属性（概念），例如餐厅的名字、附近的商圈、菜系、价位、环境等等。
 
@@ -59,8 +59,8 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4ODEwMzE2NSwxODc5MjkyNzU3LDU1Nj
-c3ODQ4MSw3NDE2NjAxNDUsMTY3ODM4ODc3Niw1MTI4MjE0NDIs
-LTYzNzY5ODg3NiwtMjA2MzQwNzA0MCwtMTE1NjY4NTE3MiwxMj
-M3NTk3OTc3XX0=
+eyJoaXN0b3J5IjpbLTEzNjc2ODAyNjgsMTU4ODEwMzE2NSwxOD
+c5MjkyNzU3LDU1Njc3ODQ4MSw3NDE2NjAxNDUsMTY3ODM4ODc3
+Niw1MTI4MjE0NDIsLTYzNzY5ODg3NiwtMjA2MzQwNzA0MCwtMT
+E1NjY4NTE3MiwxMjM3NTk3OTc3XX0=
 -->
