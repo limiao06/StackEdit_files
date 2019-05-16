@@ -53,14 +53,14 @@
 * 【领域】：既然对话系统要帮助用户达成某种特定任务，那么这个任务一定是和某个特定领域相关的，比如是机票、餐馆、点歌等。因此，面向任务的对话系统基本上是限定领域的对话系统。
 * 【领域知识】：领域通常需要一个后端知识库描述，知识库需要包含可以描述这一领域相关任务的一组概念，或者一些数据实体。以餐馆领域为例，后端知识库可以由一个数据库表示，数据库中的数据项是各个餐厅，每个餐厅有一些描述的属性（概念），例如餐厅的名字、附近的商圈、菜系、价位、环境等等。
 
-
+在介绍对话系统的基本组成结构之前，我认为有必要先理解一下对话系统的大致工作过程，
 
 
 ## 三、聊天机器人
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MTU2NzI4Myw1NTY3Nzg0ODEsNzQxNj
-YwMTQ1LDE2NzgzODg3NzYsNTEyODIxNDQyLC02Mzc2OTg4NzYs
-LTIwNjM0MDcwNDAsLTExNTY2ODUxNzIsMTIzNzU5Nzk3N119
+eyJoaXN0b3J5IjpbNzYxMzU3MjEyLDU1Njc3ODQ4MSw3NDE2Nj
+AxNDUsMTY3ODM4ODc3Niw1MTI4MjE0NDIsLTYzNzY5ODg3Niwt
+MjA2MzQwNzA0MCwtMTE1NjY4NTE3MiwxMjM3NTk3OTc3XX0=
 -->
