@@ -51,14 +51,14 @@
 为了之后的介绍方便，下面要谈论一些名词术语和概念。
 
 * 【领域】：既然对话系统要帮助用户达成某种特定任务，那么这个任务一定是和某个领域相关的，比如是机票、餐馆、点歌等。
-* 【领域知识】：领域通常需要一个后端知识库描述，知识库需要包含可以描述这一领域相关任务的一组概念，或者一些数据实体。以餐馆领域为例，如果用户的目的（也就是系统的任务）是查找某个
+* 【领域知识】：领域通常需要一个后端知识库描述，知识库需要包含可以描述这一领域相关任务的一组概念，或者一些数据实体。以餐馆领域为例，如果用户的目的是查找某个餐厅，那么描述这个目的可能需要一些约束条件，可能是餐厅的名字、附近的商圈、菜系、价位、环境等等
 
 
 ## 三、聊天机器人
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzMTAwMjg0LDc0MTY2MDE0NSwxNjc4Mz
-g4Nzc2LDUxMjgyMTQ0MiwtNjM3Njk4ODc2LC0yMDYzNDA3MDQw
-LC0xMTU2Njg1MTcyLDEyMzc1OTc5NzddfQ==
+eyJoaXN0b3J5IjpbLTYzNDc0MjM4NCw3NDE2NjAxNDUsMTY3OD
+M4ODc3Niw1MTI4MjE0NDIsLTYzNzY5ODg3NiwtMjA2MzQwNzA0
+MCwtMTE1NjY4NTE3MiwxMjM3NTk3OTc3XX0=
 -->
