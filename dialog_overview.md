@@ -56,7 +56,8 @@
 
 ### 2. 系统组成
 
-如果你不是很了解对话系统，也不清楚对话系统的基本组成，那么
+下图是面向任务的对话系统的基本组成框图，该图同时描述了在一轮对话中，用户输入到
+
 
 ### 3. 现有研究情况
 
@@ -71,7 +72,7 @@
 > [2] 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQyODM2MTIwLC05MDI0NDE3NjUsLTEzNj
+eyJoaXN0b3J5IjpbMzQyOTYyNTE2LC05MDI0NDE3NjUsLTEzNj
 c2ODAyNjgsMTU4ODEwMzE2NSwxODc5MjkyNzU3LDU1Njc3ODQ4
 MSw3NDE2NjAxNDUsMTY3ODM4ODc3Niw1MTI4MjE0NDIsLTYzNz
 Y5ODg3NiwtMjA2MzQwNzA0MCwtMTE1NjY4NTE3MiwxMjM3NTk3
